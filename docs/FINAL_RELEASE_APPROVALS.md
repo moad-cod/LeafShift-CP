@@ -1,8 +1,10 @@
 # Release authority and permission scope
 
 Recorded 18 November 2026 from the first author's instructions and explicit
-working-conversation responses. No private correspondence, fabricated signature
-or independent legal verification is represented.
+working-conversation responses, including the explicit instruction to publish
+the exact manuscript Figure 1. Private correspondence is not published or
+accessed for this update; the first author's confirmation is the authorization
+record. No fabricated signature or independent legal review is represented.
 
 ## Software and scientific authorship
 
@@ -20,12 +22,20 @@ are distinct.
 
 ## Derived outputs
 
-The first author reports the dataset corresponding author's permission for
-sharing, including GitHub:
+Mouad el Baz, the first author, obtained permission from the PhenoLeaf-TS dataset
+corresponding author, Dr. Rijad Sarić, for the use of the specified research
+materials and derived outputs. The original dataset remains available from its
+official provider.
+
+The first author's confirmation authorizes inclusion of the specified materials
+and derived outputs in this public repository, with attribution to both
+[PhenoLeaf-TS](https://doi.org/10.1007/978-3-032-37359-5_23) and
+[ALeRT](https://doi.org/10.1016/j.compag.2026.112620):
 
 - Aggregate performance metrics and statistical summaries.
 - Plant-level derived observation counts and QC summaries.
 - Conformal evaluation results and numerical figures.
+- The unchanged original manuscript Figure 1 composite.
 
 Selected compact evidence, plant/genotype metrics, count/QC summaries, paper
 tables, numeric plot inputs and numerical figures are included under that scope.
@@ -35,14 +45,19 @@ private review records remain excluded. Private correspondence is not uploaded.
 
 ## Figure 1 and declarations
 
-The first author confirms Figure 1 reproduction in the scientific manuscript.
-Public composite/source-RGB/mask redistribution is not affirmed, so Figure 1,
-its editable/image sources and PDFs embedding it stay out of the public release.
-The submission package retains the original manuscript asset.
+The first author expressly authorized publication of the exact manuscript
+Figure 1 at figures/main/F1_workflow.png. It combines PhenoLeaf-TS imagery with
+our experimental workflow. Its SHA-256 matches the manuscript source figure.
+The figure is copied without modification. This specific authorization does not
+grant unrestricted rights to the raw dataset, separate source RGB images,
+segmentation masks, editable design files or manuscript submission PDFs.
+Source images and masks remain available from the official dataset provider.
 
 The first author confirms all three authors' no-competing-interests declaration.
 This does not invent funding, sponsorship or any other unanswered declaration.
 
-The user authorized preparation/validation only. No staging, commit, push,
-visibility change or journal submission occurred. Public access to this candidate
-must be checked after the manual publication.
+The research repository is published at https://github.com/moad-cod/LeafShift-CP.
+The original 87 initial-import commits are preserved; the Figure 1 and permission
+documentation update is a normal subsequent commit. No journal submission or
+change to scientific results, author order or software licensing is authorized
+by this documentation update.

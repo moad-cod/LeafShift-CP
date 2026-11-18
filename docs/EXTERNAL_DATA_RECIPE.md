@@ -56,4 +56,4 @@ here. In particular, `plan figures` and `plan tables` currently list no required
 inputs even though the implementations read CSVs: inspect the software-dependency
 record and implementation, not only this coarse route-level preflight.
 
-Selected derived tables and numerical figures are now included under the reported permission scope in FINAL_RELEASE_APPROVALS.md. Original observation exports and raw files remain excluded. Verification uses genuine archives; missing inputs are never manufactured to satisfy a test.
+Selected derived tables and numerical figures are included under the confirmed permission scope in FINAL_RELEASE_APPROVALS.md. The authorized manuscript Figure 1 is a copied publication asset, not a regenerated result. Original observation exports and separate raw dataset files remain excluded. Verification uses genuine archives; missing inputs are never manufactured to satisfy a test.

@@ -11,7 +11,7 @@ authors:
     given-names: "Qasim"
 version: 0.1.0
 license: MIT
-abstract: "Locally validated research-code release candidate for interval reliability under held-out genotype exclusion, with authorized derived evidence. The associated manuscript awaits submission; full end-to-end retraining is not claimed."
+abstract: "Public research-code repository for interval reliability under held-out genotype exclusion, with authorized research materials and derived evidence. The associated manuscript awaits submission; full end-to-end retraining is not claimed."
 keywords:
   - conformal prediction
   - plant phenotyping

@@ -1,38 +1,44 @@
 {
   "date": "2026-11-18",
-  "status": "PASS: exact selected scientific/code inputs; final documentation/manifest hashes rechecked",
+  "status": "PASS: authorized Figure 1 copy and documentation update; no scientific changes",
   "unit_tests": {
     "run": 9,
     "passed": 9,
     "failed": 0
   },
   "numerical_and_copy_integrity": {
-    "checks": 473,
-    "passed": 473,
+    "checks": 474,
+    "passed": 474,
     "failed": 0
   },
   "scientific_numeric_checks": 199,
-  "byte_identical_original_copies": 274,
-  "code_and_existing_scientific_artifacts_unchanged": 324,
-  "canonical_media_hashes_against_originals": 36,
+  "byte_identical_original_copies": 275,
+  "existing_scientific_and_software_files_unchanged": 283,
+  "protected_manuscript_and_submission_files_unchanged": 155,
+  "canonical_media_hashes_against_originals": 37,
+  "Figure_1": {
+    "path": "figures/main/F1_workflow.png",
+    "manuscript_source": "figures/final/F1_dataset_workflow.png",
+    "bytes": 941668,
+    "sha256": "78860f5b016e30f9a96974629ad5f4110a74a45baa04268d4722b9644fb1cbfd",
+    "unchanged_exact_copy": true,
+    "authorization": "Mouad el Baz explicitly confirmed obtained permission and authorized this public inclusion"
+  },
   "decoded_or_visually_inspected_media": false,
-  "CITATION_cff_parsed": "PyYAML 6.0.1",
-  "MIT_software_scope": "Two holders explicitly confirmed agreement and licensing authority; data/figures separately scoped",
+  "CITATION_authors_and_license_unchanged": true,
+  "MIT_LICENSE_unchanged": true,
   "target_repository": {
     "url": "https://github.com/moad-cod/LeafShift-CP",
-    "read_only_metadata_checked": true,
-    "visibility_reported": "public",
-    "reported_size_kb": 0,
-    "synchronized_candidate_pushed": false,
-    "candidate_public_access_verified": false
+    "public_base_commit": "b902e2728fcd3a29a03706e50b94f8f8e9d1d5d2",
+    "base_public_access_verified": true,
+    "update_validation": "Before the authorized normal push; current remote branch identifies the published version"
   },
-  "secrets_private_paths_in_selected_text": "No stated credential/private-path patterns found; binary metadata not decoded",
-  "selected_raw_or_observation_exports": 0,
-  "selected_Figure1_assets": 0,
+  "selected_separate_raw_or_observation_exports": 0,
+  "selected_Figure1_assets": 1,
   "private_review_records_selected": 0,
-  "routing": "list and plan conformal succeeded without experiment execution",
+  "permission_correspondence_accessed": false,
   "historical_replays": "Not repeated; no model training, plot regeneration or numerical CSV generation",
-  "github_mutation_or_journal_submission": false,
+  "journal_submission": false,
   "checks": [
     {
       "name": "copy integrity: src/E0/bidirectional_leaf_identity_audit.py",
@@ -1676,6 +1682,12 @@
       "name": "copy integrity: figures/supplementary/Figure_S2_Interval_Width_and_Leaf_Area.svg",
       "status": "pass",
       "source": "figures/supplementary/Figure_S2_Interval_Width_and_Leaf_Area.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F1_workflow.png",
+      "status": "pass",
+      "source": "figures/final/F1_dataset_workflow.png",
       "evidence_level": "byte-verified source copy"
     },
     {
@@ -3434,7 +3446,7 @@
       "evidence_level": "verified from archived outputs"
     },
     {
-      "name": "U0\u2013U8 procedure coverage",
+      "name": "U0–U8 procedure coverage",
       "observed": 1.0,
       "expected": 1.0,
       "tolerance": 1e-09,

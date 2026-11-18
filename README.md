@@ -7,10 +7,11 @@ Held-Out Arabidopsis Genotypes**
 **Corresponding author:** Sahil Khan.
 
 Research software and authorized derived evidence for individual-leaf forecast
-uncertainty under held-out genotypes. This is a locally validated release
-candidate for [moad-cod/LeafShift-CP](https://github.com/moad-cod/LeafShift-CP).
-The synchronized candidate has not been pushed by this preparation. Public access
-to this version must be verified after manual publication.
+uncertainty under held-out genotypes, published at
+[moad-cod/LeafShift-CP](https://github.com/moad-cod/LeafShift-CP).
+The repository provides the methodology, archived numerical evidence and
+publication figures, including the original manuscript's
+[Figure 1 workflow](figures/main/F1_workflow.png).
 
 ## Scientific question and design
 
@@ -78,7 +79,7 @@ tests/                    Lightweight integrity, import and dispatch tests
 data/                     Access instructions and permitted derived count metadata
 experiments/              Authorized compact metrics/QC at original working paths
 results/                  Paper tables, archived summaries and current check receipt
-figures/main/             Numerical Figures 2–9; Figure 1 excluded
+figures/main/             Manuscript Figure 1 and numerical Figures 2–9
 figures/supplementary/     Numerical Figures S1–S4
 figures/rebuilt/           Original plotting code and approved numeric inputs
 manuscript/tables/        Canonical table dependencies; no manuscript PDF
@@ -119,12 +120,20 @@ fitting and calibration require authorized external/generated inputs; see
 
 ## Availability and limitations
 
-The first author reports dataset-owner permission for aggregate metrics/statistics,
-plant-level derived counts/QC, conformal results and numerical figures to be
-shared, including on GitHub. This does not authorize raw RGB/masks, archives,
-original observation/window exports or private review material. Figure 1 remains
-excluded: manuscript reproduction permission does not establish public rights
-for the image-bearing composite or source imagery.
+Mouad el Baz, the first author, obtained permission from the PhenoLeaf-TS dataset
+corresponding author, Dr. Rijad Sarić, for the use of the specified research
+materials and derived outputs. The original dataset remains available from its
+official provider.
+
+The specified outputs in this repository include aggregate metrics/statistics,
+plant-level derived counts/QC, conformal results, numerical figures and the
+unchanged manuscript Figure 1, whose public inclusion is authorized by the first
+author's confirmation. Figure 1 combines PhenoLeaf-TS imagery with our experimental
+workflow; both required dataset publications are cited above. This permission
+does not grant unrestricted redistribution of original RGB datasets, segmentation
+masks, raw archives or observation/window/leaf exports. Obtain original source
+images and masks from the dataset provider. Private correspondence is not
+published; see [permission scope](docs/DATA_AVAILABILITY.md).
 
 The original dataset archive identity/checksum is unresolved; 260 Ba4-1 RGB files
 were missing from the audited source. Full end-to-end training has not been

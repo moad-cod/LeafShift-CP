@@ -1,9 +1,7 @@
 # Data and code availability
 
-This local candidate contains original software and selected authorized derived
-evidence. The intended destination is https://github.com/moad-cod/LeafShift-CP.
-The repository exists, but the synchronized candidate's public access must be
-verified after the author's manual push.
+Research software, authorized research materials and selected derived evidence
+are publicly available at https://github.com/moad-cod/LeafShift-CP.
 
 ## Source and citations
 
@@ -23,21 +21,32 @@ information; it is not established as an experimental input.
 
 ## Permission scope
 
-The first author reports that the dataset corresponding author granted sharing,
-including GitHub, of aggregate performance metrics/statistical summaries,
-plant-level derived observation counts/QC and conformal evaluation results and
-numerical figures. Selected files fall within those categories. This is a
-first-author confirmation, not an invented copy of private correspondence.
-See [the scope record](FINAL_RELEASE_APPROVALS.md).
+Mouad el Baz, the first author, obtained permission from the PhenoLeaf-TS dataset
+corresponding author, Dr. Rijad Sarić, for the use of the specified research
+materials and derived outputs. The original dataset remains available from its
+official provider.
+
+The first author's confirmation authorizes inclusion in this public repository
+of the specified aggregate performance metrics/statistical summaries, plant-level
+derived observation counts/QC, conformal evaluation results, numerical figures
+and the exact original manuscript Figure 1. Both provider-requested publications
+above must be cited. The authorization record is the first author's explicit
+confirmation and instruction to publish these materials; private correspondence
+is not published. See [the scope record](FINAL_RELEASE_APPROVALS.md).
 
 Raw RGB, masks, archives, palette/source-label fragments, original observation/
 window/leaf records and private review payloads remain excluded. Local evidence
 is retained; the exact public allowlist prevents its inclusion. Provider
 documentation is linked rather than republished.
 
-Figure 1 has first-author-confirmed manuscript permission. Public redistribution
-of the composite/source RGB/mask is not confirmed, so Figure 1 and manuscript
-PDFs embedding it remain excluded from this repository.
+[Figure 1](../figures/main/F1_workflow.png) is included in the manuscript and this
+repository. It combines original PhenoLeaf-TS imagery with our experimental
+workflow and is copied without modification. Its inclusion does not authorize
+redistribution of the complete raw dataset or separate source RGB/mask files.
+Original source images and masks remain available through the dataset provider.
+The repository also provides the methodology, numerical evidence and other
+publication figures. Manuscript submission PDFs and editable figure-design files
+are not included.
 
 ## Reconstruction limits
 

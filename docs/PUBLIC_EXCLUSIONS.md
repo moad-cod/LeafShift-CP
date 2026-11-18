@@ -7,9 +7,11 @@ Do not override ignores to stage the whole working directory.
 - Original observation, frame, leaf/track and forecasting-window exports.
 - Palette/color identity fragments and detailed annotation/identity events.
 - Restricted review queues, reviewer notes and personal correspondence.
-- Figure 1 and image-bearing source/design files: manuscript permission is not
-  confirmation of public composite/source-image redistribution.
-- Manuscript/submission PDFs and source packages embedding Figure 1.
+- Separate original source RGB/mask files and editable figure-design sources.
+  The authorized, unchanged Figure 1 composite is included at
+  [figures/main/F1_workflow.png](../figures/main/F1_workflow.png); its specific
+  inclusion does not authorize unrestricted redistribution of source imagery.
+- Manuscript/submission PDFs and source packages.
 - Obsolete local audits/proposals, environments, caches, local runs and unrelated projects.
 - Compatibility duplicates of canonical figures and internal code-inventory dumps.
 

@@ -24,10 +24,22 @@ This tree is not bundled or upload-eligible. The runner can link an external
 authorized directory into an isolated run; see
 [the recipe](../docs/EXTERNAL_DATA_RECIPE.md).
 
-Selected metadata and plant-level count/QC/statistical summaries are included
-under the reported derived-output permission. Original observation/window/leaf
-records, RGB, masks, palette/source-label fragments, archives and private review
-payloads remain excluded. See [availability](../docs/DATA_AVAILABILITY.md) and
+Mouad el Baz, the first author, obtained permission from the PhenoLeaf-TS dataset
+corresponding author, Dr. Rijad Sarić, for the use of the specified research
+materials and derived outputs. The original dataset remains available from its
+official provider.
+
+The specified aggregate/statistical, plant-count/QC and conformal outputs are
+included in this public repository, together with the unchanged manuscript
+[Figure 1](../figures/main/F1_workflow.png), as authorized by the first author's
+confirmation. Cite both required publications above. Figure 1 combines
+PhenoLeaf-TS imagery with our experimental workflow; its inclusion does not
+permit unrestricted redistribution of original source images or masks.
+
+Original observation/window/leaf records, RGB datasets, segmentation masks,
+palette/source-label fragments, archives and private review payloads remain
+excluded. Obtain original source images and masks through the dataset provider.
+See [availability](../docs/DATA_AVAILABILITY.md) and
 [permission scope](../docs/FINAL_RELEASE_APPROVALS.md).
 
 Original source archive identity/checksum is unresolved; the audited source

@@ -15,7 +15,7 @@
    fitting, U5 export and adaptive refitting require authorized external/generated
    inputs. No complete independent end-to-end training reproduction is claimed.
 
-## Current exact-candidate checks
+## Current public-release checks
 
 After installing the Python 3.12 requirements:
 
