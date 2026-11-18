@@ -1,0 +1,14 @@
+{
+  "source_path": "experiments/E0/tables/E0_2_leaf_area_trajectories.csv",
+  "source_bytes": 22489391,
+  "source_sha256": "751ae169853037e6978a8b22e3526da1670e3d3f9c106fca8e19661f2923e2c7",
+  "operation": "Group original CSV rows by genotype and plant; count rows and distinct leaf identifiers. No filtering, imputation or scientific model.",
+  "rows": 165796,
+  "genotypes": 21,
+  "plants": 318,
+  "minimum_area_pixels": 20,
+  "leaf_trajectories": 5656,
+  "derived_file": "data/manifests/retained_observations_by_plant.csv",
+  "derived_sha256": "9b897c8831368943bb0650f8f7e0fc37f1219bc1dcb31b61abbc6d1d41cd91c9",
+  "historical_discrepancy": "E0_2_plant_quality_summary.csv sums to 164966; the actual retained-observation table has 165796 rows. The former is an intermediate audit summary, not the final retained-observation count."
+}

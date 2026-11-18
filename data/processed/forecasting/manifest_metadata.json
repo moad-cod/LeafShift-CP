@@ -1,0 +1,36 @@
+{
+  "experiment": "E1.0",
+  "manifest": "data/processed/forecasting/forecast_windows.csv",
+  "history_length": 6,
+  "max_history_hours": 72.0,
+  "horizons_hours": [
+    24,
+    48
+  ],
+  "target_tolerance_hours": 3.0,
+  "min_area_pixels": 20,
+  "unit": "visible_projected_area_pixels",
+  "genotype_split_policy": "Leave-one-genotype-out; folds not yet trained",
+  "flagged_plant": "Is-1/rep_24",
+  "summary": [
+    {
+      "horizon_hours": 24,
+      "windows": 121431,
+      "eligible_genotypes": 21,
+      "eligible_plants": 318,
+      "windows_with_skipped_history_frames": 3368,
+      "windows_in_flagged_palette_plant": 1245,
+      "matches_E0_5_reference": 1
+    },
+    {
+      "horizon_hours": 48,
+      "windows": 107214,
+      "eligible_genotypes": 21,
+      "eligible_plants": 318,
+      "windows_with_skipped_history_frames": 3005,
+      "windows_in_flagged_palette_plant": 1158,
+      "matches_E0_5_reference": 1
+    }
+  ],
+  "quality_warning": "Color identities are intended to persist, but some annotation consistency checks remain unresolved. Future-target quality must not enter input features."
+}
