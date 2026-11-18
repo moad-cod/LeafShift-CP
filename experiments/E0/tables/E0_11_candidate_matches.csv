@@ -1,0 +1,4 @@
+genotype,plant_id,previous_filename,current_filename,gap_hours,old_color,new_color,cross_color_iou,same_color_iou,old_area,new_area
+Ba4-1,Ba4-1/rep_08,1000354_2022_05_18_12_01_49-6-13-TC04-RGB1_pot_A2_Ba4-1-08.png,1000354_2022_05_18_15_01_48-6-14-TC04-RGB1_pot_A2_Ba4-1-08.png,2.9997,#FABED4,#18C141,0.78212,0.04264,775,820
+Ei-6,Ei-6/rep_07,1000304_2022_05_19_12_02_48-6-15-TD05-RGB1_pot_C2_Ei-6-07.png,1000304_2022_05_19_15_02_48-6-16-TD05-RGB1_pot_C2_Ei-6-07.png,3.0,#FFFAC8,#3039F9,0.6911,0.07078,367,279
+TOU-J-3,TOU-J-3/rep_10,1000422_2022_05_25_12_02_56-6-27-TD06-RGB1_pot_B5_TOU-J-3-10.png,1000422_2022_05_25_15_02_56-6-28-TD06-RGB1_pot_B5_TOU-J-3-10.png,3.0,#18C141,#7300DA,0.69333,0,256,252
