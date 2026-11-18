@@ -1,0 +1,19 @@
+horizon_hours,method,procedure,family,type,coverage,width_px2,interval_score,genotypes_below_90,source_csv
+24,U0,U0_pooled,Absolute residual,pooled,0.836014906347813,1073.79967025671,2398.23294884123,19,experiments/E2/tables/E2_4_summary.csv
+24,U1,U1_balanced,Absolute residual,balanced,0.899218280254864,1394.93780185812,2287.06888960949,9,experiments/E2/tables/E2_4_summary.csv
+24,U2,U2_normalized_pooled,Normalized residual,pooled,0.879876161243054,1262.07617041515,2103.81979828921,17,experiments/E3/tables/E3_1_summary.csv
+24,U3,U3_normalized_balanced,Normalized residual,balanced,0.900063186815377,1379.67147331412,2092.64044580621,12,experiments/E3/tables/E3_1_summary.csv
+24,U4,U4_CQR_pooled,CQR,pooled,0.881454526664232,1403.17849035723,2140.53443069061,16,experiments/E3/tables/E3_2_summary.csv
+24,U5,U5_CQR_balanced,CQR,balanced,0.899711976935865,1479.05895089632,2139.58708221221,8,experiments/E3/tables/E3_2_summary.csv
+24,U6,U6_Mondrian_pooled,Size-Mondrian,pooled,0.86838734447351,1209.98610909272,2198.6089086092,19,experiments/E3/tables/E3_3_summary.csv
+24,U7,U7_Mondrian_balanced,Size-Mondrian,balanced,0.903582359522714,1389.72156069126,2179.53440623002,9,experiments/E3/tables/E3_3_summary.csv
+24,U8,U8_trajectory_balanced,Trajectory sensitivity,exploratory,0.904159186602723,1429.83309051232,2285.33646532017,9,experiments/P0/P0_4c_U8/tables/U8_summary.csv
+48,U0,U0_pooled,Absolute residual,pooled,0.837937154019744,1817.20013569741,3694.73358362031,19,experiments/E2/tables/E2_4_summary.csv
+48,U1,U1_balanced,Absolute residual,balanced,0.898679811980239,2305.04138586296,3528.2520203379,9,experiments/E2/tables/E2_4_summary.csv
+48,U2,U2_normalized_pooled,Normalized residual,pooled,0.883322679072564,2252.5850896982,3428.18127559659,17,experiments/E3/tables/E3_1_summary.csv
+48,U3,U3_normalized_balanced,Normalized residual,balanced,0.899626935205437,2413.21207838112,3437.77482113578,11,experiments/E3/tables/E3_1_summary.csv
+48,U4,U4_CQR_pooled,CQR,pooled,0.868710408527777,2164.33173958074,3395.17152015442,16,experiments/E3/tables/E3_2_summary.csv
+48,U5,U5_CQR_balanced,CQR,balanced,0.900400611362259,2385.6891525431,3389.09167067396,6,experiments/E3/tables/E3_2_summary.csv
+48,U6,U6_Mondrian_pooled,Size-Mondrian,pooled,0.865686935977857,2028.59703604596,3506.30140378671,19,experiments/E3/tables/E3_3_summary.csv
+48,U7,U7_Mondrian_balanced,Size-Mondrian,balanced,0.903798686834893,2348.52189747707,3468.43166917145,7,experiments/E3/tables/E3_3_summary.csv
+48,U8,U8_trajectory_balanced,Trajectory sensitivity,exploratory,0.912348914459815,2464.00793051702,3530.14663790463,6,experiments/P0/P0_4c_U8/tables/U8_summary.csv
