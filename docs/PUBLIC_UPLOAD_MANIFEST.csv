@@ -2,7 +2,7 @@ path,bytes,sha256,permission_scope,note
 .gitignore,18961,48465b090c67f04b82a83e4f076443e2cb5d1e98bde3b00cfd653cabe8b5d463,MIT original software; separately permitted derived material; see approval record,
 CITATION.cff,886,19031050a0dd26234128cf4c27e82fbcfd9365c1624e07ac0b535d2128eeab9d,MIT original software; separately permitted derived material; see approval record,
 LICENSE,1081,346fd678466718f05d64d2a22e778909f7b349223297143d6e4049a8704c4663,MIT original software; separately permitted derived material; see approval record,
-README.md,8490,55329b2cb4f44301fe9913007e1ca27fd05cbba63d33421cbb8bca26240b61d0,MIT original software; separately permitted derived material; see approval record,
+README.md,19389,8576a3d0ef034c85d23c2e15449cdb43e949a2382a48b1ba8c775d3ffa48b477,MIT original software; separately permitted derived material; see approval record,
 configs/E1_1_genotype_folds.json,57067,0a036a4e1ad5faf3fc7df6380d750d4b9e2a1f36eb3c1be3552008fa5a406a23,MIT original software; separately permitted derived material; see approval record,
 configs/E2_0_uncertainty_protocol.json,13350,bb11b5bc6f1eb10cc08786f924f604bbd33d0d96c590e4474685f5d6a75e1224,MIT original software; separately permitted derived material; see approval record,
 data/README.md,2204,88ce7a23cf56010024ba217fdbbc2a39b234e74cbefdd5d929e56ae74293e90e,MIT original software; separately permitted derived material; see approval record,
@@ -15,11 +15,11 @@ docs/DATA_AVAILABILITY.md,3215,7f8ed853de00d9a3188ce708137e449cd9ae754cc44690646
 docs/EXTERNAL_DATA_RECIPE.md,4027,1a8762498d746d81bdea78518db119c4e8f0e7efcce16a4ceaee22363cd7cf2d,MIT original software; separately permitted derived material; see approval record,
 docs/FIGURE_TABLE_MAP.csv,5544,b0cadeec2801663b464890cdf627588b01e3d011713452058b7b5c7720e13422,MIT original software; separately permitted derived material; see approval record,
 docs/FILE_INVENTORY.csv,135781,46916a475a66ba063f1755e20a56ec3c907e5ff5fafaa8d7908d7e5606249f8e,MIT original software; separately permitted derived material; see approval record,
-docs/FINAL_GITHUB_RELEASE_REPORT.md,5607,94c776e0f2179b653a7654d83365735e1666574ce2279fbef8155fed63716e37,MIT original software; separately permitted derived material; see approval record,
+docs/FINAL_GITHUB_RELEASE_REPORT.md,6482,071af4de7532d243f4a6b2f621ec3ca57b249211f6fd8805211a5b3c5118db7a,MIT original software; separately permitted derived material; see approval record,
 docs/FINAL_RELEASE_APPROVALS.md,3322,9d098c52c14fc5fbeaa7de0d1baf24b384e5abb3c1a0bcdbf2f70d397670ee6b,MIT original software; separately permitted derived material; see approval record,
 docs/PUBLIC_EXCLUSIONS.md,1338,b057450c376bc16468900185e1105882d00787bba8c501c2714ce42442edc671,MIT original software; separately permitted derived material; see approval record,
 docs/PUBLIC_UPLOAD_FILES.txt,14216,d614bb50c646f09e54f32777e71b2b714ccbcbcc9b5d85266c20ef227ff2d607,MIT original software; separately permitted derived material; see approval record,
-docs/PUBLIC_UPLOAD_MANIFEST.csv,60617,,MIT original software; separately permitted derived material; see approval record,Self-digest omitted for self-reference
+docs/PUBLIC_UPLOAD_MANIFEST.csv,60618,,MIT original software; separately permitted derived material; see approval record,Self-digest omitted for self-reference
 docs/REPRODUCIBILITY.md,3661,68d05723d06267027a43d1fc0257802851593657409e2aae36008838c9487aee,MIT original software; separately permitted derived material; see approval record,
 experiments/E0/tables/E0_10_bidirectional_matches.csv,8273,5bf7490a88b75d21e7f7c556404c444cfa24f4804919daf5ac31f3e7e1cddb9c,MIT original software; separately permitted derived material; see approval record,
 experiments/E0/tables/E0_10_transition_summary.csv,13535,f610020901b97036390f5116fb167e7625c8bba3b105fb9df1b3f2893e692e42,MIT original software; separately permitted derived material; see approval record,

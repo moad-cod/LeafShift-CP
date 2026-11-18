@@ -6,9 +6,24 @@ The authorized Figure 1 and permission-documentation update passed the checks
 below; the original 87 import commits are retained.
 The current GitHub main branch identifies the published version.
 
+## Reviewer-oriented README update
+
+The root README now presents the research question, three contributions, verified
+headline results, experimental design, U0–U8 methods, curated-release provenance,
+reviewer navigation and three reproducibility levels. The existing authorized
+Figure 1 is embedded without changing its bytes; all 13 figure links and the
+three manuscript table evidence links are checked.
+
+Current lightweight checks pass: 9/9 tests and 474/474 scientific/copy checks.
+Headline values match the genuine archived point, conformal and paired adaptive
+tables. No experiment or figure replay was rerun. This documentation update
+changes only README.md, this release summary and PUBLIC_UPLOAD_MANIFEST.csv.
+It adds no public files and changes no scientific source, configuration, result,
+figure, author/license metadata, manuscript or CEA submission material.
+
 ## Release contents
 
-- **302 files, 16376516 bytes (15.62 MiB)**.
+- **302 files, 16388291 bytes (15.63 MiB)**.
 - Exact membership: [PUBLIC_UPLOAD_FILES.txt](PUBLIC_UPLOAD_FILES.txt).
 - Current sizes/hashes: [PUBLIC_UPLOAD_MANIFEST.csv](PUBLIC_UPLOAD_MANIFEST.csv).
 - Original software, configurations, authorized aggregate/conformal and plant-
