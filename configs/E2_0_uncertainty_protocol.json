@@ -1,0 +1,726 @@
+{
+  "experiment": "E2.0",
+  "research_task": "Uncertainty quantification for individual-leaf visible projected area under genotype shift",
+  "forecast_horizons_hours": [
+    24,
+    48
+  ],
+  "nominal_coverage": 0.9,
+  "evaluation": "leave_one_genotype_out",
+  "outer_folds": 21,
+  "inner_folds_available": 4,
+  "primary_calibration_inner_fold": 1,
+  "model_fitting_genotypes": 15,
+  "calibration_genotypes": 5,
+  "test_genotypes": 1,
+  "baseline_model": {
+    "name": "HistGradientBoostingRegressor",
+    "configuration": "E1.5 flexible",
+    "max_iter": 150,
+    "max_leaf_nodes": 31,
+    "learning_rate": 0.05,
+    "l2_regularization": 1.0,
+    "max_bins": 64,
+    "min_samples_leaf": 40,
+    "early_stopping": false,
+    "random_state": 20261108
+  },
+  "calibration_method_next_phase": "Absolute-residual split conformal, with observed empirical coverage evaluated under held-out genotype shift.",
+  "primary_metrics": [
+    "empirical_window_coverage",
+    "plant_averaged_coverage",
+    "macro_genotype_coverage",
+    "mean_prediction_interval_width",
+    "per_genotype_coverage",
+    "point_prediction_MAE"
+  ],
+  "additional_diagnostics": [
+    "leaf_size_stratification",
+    "history_gap_stratification",
+    "growth_rate_variation",
+    "calibration_split_sensitivity"
+  ],
+  "scientific_constraints": [
+    "Never fit on test genotype",
+    "Never calibrate using test genotype",
+    "Never use future target area in predictors",
+    "Do not treat overlapping windows as independent",
+    "Do not claim distribution-free coverage under unverified genotype exchangeability",
+    "Use calibration genotype folds without choosing the best fold from test performance",
+    "Retain annotation quality warnings"
+  ],
+  "primary_splits": [
+    {
+      "outer_fold": 1,
+      "test_genotype": "Ba4-1",
+      "fit_genotypes": [
+        "Ba5-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Hs-0",
+        "Is-1",
+        "Ler-1",
+        "Sav-0",
+        "TOU-I-17",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Kz-9",
+        "Lz-0",
+        "Or-0",
+        "TOU-J-3",
+        "Uk-1"
+      ],
+      "test_genotypes": [
+        "Ba4-1"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 2,
+      "test_genotype": "Ba5-1",
+      "fit_genotypes": [
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Hs-0",
+        "Is-1",
+        "Ler-1",
+        "Lz-0",
+        "Or-0",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-4",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Ba4-1",
+        "Kz-9",
+        "Sav-0",
+        "Uk-1",
+        "Utrecht"
+      ],
+      "test_genotypes": [
+        "Ba5-1"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 3,
+      "test_genotype": "Bch-4",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Is-1",
+        "Ler-1",
+        "Sav-0",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Hs-0",
+        "Kz-9",
+        "Lz-0",
+        "Or-0",
+        "Uk-1"
+      ],
+      "test_genotypes": [
+        "Bch-4"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 4,
+      "test_genotype": "Col-0",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Bch-4",
+        "Cvi-0",
+        "Ei-6",
+        "Is-1",
+        "Ler-1",
+        "Or-0",
+        "Sav-0",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-1",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Ba5-1",
+        "Go-0",
+        "Hs-0",
+        "Kz-9",
+        "Lz-0"
+      ],
+      "test_genotypes": [
+        "Col-0"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 5,
+      "test_genotype": "Cvi-0",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Bch-4",
+        "Col-0",
+        "Ei-6",
+        "Is-1",
+        "Ler-1",
+        "Or-0",
+        "Sav-0",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-1",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Ba5-1",
+        "Go-0",
+        "Hs-0",
+        "Kz-9",
+        "Lz-0"
+      ],
+      "test_genotypes": [
+        "Cvi-0"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 6,
+      "test_genotype": "Ei-6",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Go-0",
+        "Is-1",
+        "Ler-1",
+        "Sav-0",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Hs-0",
+        "Kz-9",
+        "Lz-0",
+        "Or-0",
+        "Uk-1"
+      ],
+      "test_genotypes": [
+        "Ei-6"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 7,
+      "test_genotype": "Go-0",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Hs-0",
+        "Is-1",
+        "Ler-1",
+        "Sav-0",
+        "TOU-I-17",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Kz-9",
+        "Lz-0",
+        "Or-0",
+        "TOU-J-3",
+        "Uk-1"
+      ],
+      "test_genotypes": [
+        "Go-0"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 8,
+      "test_genotype": "Hs-0",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Is-1",
+        "Ler-1",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Kz-9",
+        "Lz-0",
+        "Or-0",
+        "Sav-0",
+        "Uk-1"
+      ],
+      "test_genotypes": [
+        "Hs-0"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 9,
+      "test_genotype": "Is-1",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Ler-1",
+        "Or-0",
+        "Sav-0",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-1",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Ba5-1",
+        "Go-0",
+        "Hs-0",
+        "Kz-9",
+        "Lz-0"
+      ],
+      "test_genotypes": [
+        "Is-1"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 10,
+      "test_genotype": "Kz-9",
+      "fit_genotypes": [
+        "Bch-4",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Hs-0",
+        "Is-1",
+        "Ler-1",
+        "Or-0",
+        "Sav-0",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-1",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Col-0",
+        "Lz-0",
+        "Uk-4"
+      ],
+      "test_genotypes": [
+        "Kz-9"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 11,
+      "test_genotype": "Ler-1",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Is-1",
+        "Or-0",
+        "Sav-0",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-1",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Ba5-1",
+        "Go-0",
+        "Hs-0",
+        "Kz-9",
+        "Lz-0"
+      ],
+      "test_genotypes": [
+        "Ler-1"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 12,
+      "test_genotype": "Lz-0",
+      "fit_genotypes": [
+        "Ba5-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Hs-0",
+        "Is-1",
+        "Ler-1",
+        "Or-0",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-4",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Ba4-1",
+        "Kz-9",
+        "Sav-0",
+        "Uk-1",
+        "Utrecht"
+      ],
+      "test_genotypes": [
+        "Lz-0"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 13,
+      "test_genotype": "Or-0",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Is-1",
+        "Ler-1",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Hs-0",
+        "Kz-9",
+        "Lz-0",
+        "Sav-0",
+        "Uk-1"
+      ],
+      "test_genotypes": [
+        "Or-0"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 14,
+      "test_genotype": "Sav-0",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Is-1",
+        "Ler-1",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Hs-0",
+        "Kz-9",
+        "Lz-0",
+        "Or-0",
+        "Uk-1"
+      ],
+      "test_genotypes": [
+        "Sav-0"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 15,
+      "test_genotype": "TOU-I-17",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Is-1",
+        "Ler-1",
+        "Or-0",
+        "Sav-0",
+        "TOU-J-3",
+        "Uk-1",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Ba5-1",
+        "Go-0",
+        "Hs-0",
+        "Kz-9",
+        "Lz-0"
+      ],
+      "test_genotypes": [
+        "TOU-I-17"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 16,
+      "test_genotype": "TOU-J-3",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Is-1",
+        "Ler-1",
+        "Sav-0",
+        "TOU-I-17",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Hs-0",
+        "Kz-9",
+        "Lz-0",
+        "Or-0",
+        "Uk-1"
+      ],
+      "test_genotypes": [
+        "TOU-J-3"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 17,
+      "test_genotype": "Uk-1",
+      "fit_genotypes": [
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Hs-0",
+        "Is-1",
+        "Ler-1",
+        "Or-0",
+        "Sav-0",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-4",
+        "Utrecht",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Kz-9",
+        "Lz-0",
+        "Ws-2"
+      ],
+      "test_genotypes": [
+        "Uk-1"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 18,
+      "test_genotype": "Uk-4",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Hs-0",
+        "Is-1",
+        "Ler-1",
+        "Sav-0",
+        "TOU-I-17",
+        "Utrecht",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Kz-9",
+        "Lz-0",
+        "Or-0",
+        "TOU-J-3",
+        "Uk-1"
+      ],
+      "test_genotypes": [
+        "Uk-4"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 19,
+      "test_genotype": "Utrecht",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Hs-0",
+        "Is-1",
+        "Ler-1",
+        "Sav-0",
+        "TOU-I-17",
+        "Uk-4",
+        "Ws-2",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Kz-9",
+        "Lz-0",
+        "Or-0",
+        "TOU-J-3",
+        "Uk-1"
+      ],
+      "test_genotypes": [
+        "Utrecht"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 20,
+      "test_genotype": "Ws-2",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Ba5-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Go-0",
+        "Hs-0",
+        "Is-1",
+        "Ler-1",
+        "Sav-0",
+        "TOU-I-17",
+        "Uk-4",
+        "Utrecht",
+        "Zdr-1"
+      ],
+      "calibration_genotypes": [
+        "Kz-9",
+        "Lz-0",
+        "Or-0",
+        "TOU-J-3",
+        "Uk-1"
+      ],
+      "test_genotypes": [
+        "Ws-2"
+      ],
+      "inner_fold": 1
+    },
+    {
+      "outer_fold": 21,
+      "test_genotype": "Zdr-1",
+      "fit_genotypes": [
+        "Ba4-1",
+        "Bch-4",
+        "Col-0",
+        "Cvi-0",
+        "Ei-6",
+        "Is-1",
+        "Ler-1",
+        "Or-0",
+        "Sav-0",
+        "TOU-I-17",
+        "TOU-J-3",
+        "Uk-1",
+        "Uk-4",
+        "Utrecht",
+        "Ws-2"
+      ],
+      "calibration_genotypes": [
+        "Ba5-1",
+        "Go-0",
+        "Hs-0",
+        "Kz-9",
+        "Lz-0"
+      ],
+      "test_genotypes": [
+        "Zdr-1"
+      ],
+      "inner_fold": 1
+    }
+  ]
+}
