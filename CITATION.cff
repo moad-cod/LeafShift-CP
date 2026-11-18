@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and identify the version of this research code used. Publication DOI and final bibliographic details are pending."
+type: software
+title: "Reliability of Conformal Prediction for Individual-Leaf Area Forecasting Under Held-Out Arabidopsis Genotypes"
+authors:
+  - family-names: "el Baz"
+    given-names: "Mouad"
+  - family-names: "Khan"
+    given-names: "Sahil"
+  - family-names: "Khan"
+    given-names: "Qasim"
+version: 0.1.0
+license: MIT
+abstract: "Locally validated research-code release candidate for interval reliability under held-out genotype exclusion, with authorized derived evidence. The associated manuscript awaits submission; full end-to-end retraining is not claimed."
+keywords:
+  - conformal prediction
+  - plant phenotyping
+  - genotype shift
+  - Arabidopsis thaliana
+  - uncertainty quantification
