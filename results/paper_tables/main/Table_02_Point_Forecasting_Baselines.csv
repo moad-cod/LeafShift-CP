@@ -1,0 +1,7 @@
+Horizon_h,Model_ID,Point_predictor,Genotype_macro_plant_MAE_px2,Selection_note
+24,B0,Persistence,710.06528,No fitted model
+24,B2,Ridge regression,327.75818,Nested genotype CV
+24,B3,Histogram gradient boosting,309.9215285958959,Nested genotype selection
+48,B0,Persistence,1355.38917,No fitted model
+48,B2,Ridge regression,586.79985,Nested genotype CV
+48,B3,Histogram gradient boosting,518.5121051658176,Nested genotype selection
