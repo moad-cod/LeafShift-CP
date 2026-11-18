@@ -1,342 +1,323 @@
 # LeafShift-CP
 
-**Reliability of Conformal Prediction for Individual-Leaf Area Forecasting Under Held-Out *Arabidopsis* Genotypes**
+**Reliability of Conformal Prediction for Individual-Leaf Area Forecasting Under Held-Out Arabidopsis Genotypes**
 
-Research software and evidence for evaluating whether prediction intervals remain
-reliable when an entire plant genotype is absent from model fitting and conformal
-calibration. The study combines individual-leaf forecasting with genotype-resolved
-uncertainty evaluation, failure diagnostics and retrospective adaptive calibration.
+Longitudinal plant phenotyping follows individual leaves as plants develop.
+Forecasting their subsequent area can extend these observations from description
+to prediction, but a useful forecast must also communicate uncertainty when
+applied to genetic backgrounds absent from development. LeafShift-CP studies
+**segmentation-derived projected visible leaf area in px²**. This image-derived
+quantity reflects visibility and segmentation as well as growth; it is not
+calibrated physical leaf surface area or biomass.
 
-[Key findings](#key-experimental-findings) ·
-[Research evidence](#where-to-find-the-research-evidence) ·
-[Quick start](#quick-start-installation-and-verification) ·
-[Figures](#figure-and-table-evidence-map) ·
-[Dataset access](#dataset-provenance-and-access)
+The study evaluates 24- and 48-hour prediction intervals using PhenoLeaf-TS
+measurements from **21 *Arabidopsis* genotypes, 318 plants and 228,645 derived
+forecasting windows**. Nine conformal procedures, U0–U8, are compared with the
+test genotype excluded from both model fitting and calibration. Plant-balanced,
+assignment-averaged and genotype-macro evaluation separates overall calibration
+from the reliability experienced by a particular excluded genotype.
 
-## Authors
+This reliability benchmark is followed by retrospective investigations of
+replication, development assignments, temporal overlap, directional misses and
+historical area-change dynamics. Paired adaptive CQR comparisons examine whether
+historical information can improve interval efficiency without overstating the
+scope of the evidence. The central empirical finding is that **near-90%
+genotype-macro coverage coexists with markedly lower coverage for certain
+excluded genotypes**.
 
-| Author | Manuscript role |
-|---|---|
-| Mouad el Baz | First author |
-| Sahil Khan | Second author and corresponding author |
-| Qasim Khan | Third author |
+## FORECASTING AND EVALUATION FRAMEWORK
 
-## Research question and motivation
+![Forecasting and evaluation framework](figures/main/F1_workflow.png)
 
-**Can prediction intervals with approximately 90% average coverage still fail for
-specific *Arabidopsis* genotypes excluded from both fitting and calibration?**
+① **Source observations.** PhenoLeaf-TS supplies longitudinal RGB images and
+persistent leaf-instance masks. ② **Historical representation.** The original
+pipeline extracts projected visible-area observations from the masks and forms
+six-observation histories. Areas, relative observation times, adjacent changes,
+change rates and historical summaries provide 29 predictors; identifiers and
+future targets are excluded.
 
-Longitudinal plant phenotyping follows individual leaves through time. Forecasts
-can help characterize subsequent development, but their uncertainty must remain
-informative across genetic backgrounds. An interval that looks well calibrated
-on average may be unreliable for a particular unseen genotype. This matters for
-individual-leaf growth forecasting, uncertainty quantification and reproducible
-agricultural machine learning under genotype shift.
+③ **Forecasting task.** Models estimate subsequent individual-leaf visible area
+at nominal horizons of 24 and 48 hours. ④ **Genotype separation.** For interval
+evaluation, each leave-one-genotype-out fold uses 15 fitting genotypes, five
+separate calibration genotypes and one completely excluded test genotype.
+Four paired development assignments change the fitting/calibration composition
+while reusing the same held-out test plants and windows. Point-model selection
+is evaluated through its separate genotype-held-out benchmark.
 
-The response is **segmentation-derived projected visible leaf area, measured in
-px²**. It is an image-derived measurement influenced by visibility and
-segmentation, rather than calibrated physical leaf surface area or biomass.
+⑤ **Interval construction.** Conformal procedures use fitted mean or quantile
+forecasts and disjoint calibration scores to construct nominal 90% prediction
+intervals. ⑥ **Reliability evaluation.** Coverage, interval width and interval
+score are averaged within plants, across assignments within genotype, and equally
+across the held-out genotypes. Genotype-specific outcomes remain visible alongside
+the macro summary.
 
-## Principal contributions
+Figure 1 combines original PhenoLeaf-TS RGB imagery and leaf-instance masks with
+schematic panels of the documented experimental protocol. The derived windows
+are repeated prediction opportunities, not independent biological replicates.
+Dataset imagery is attributed to Sarić and colleagues; obtain original data from
+the [official provider](https://huggingface.co/datasets/rick77a/PhenoLeaf_TS).
+The unchanged figure is included under the
+[confirmed permission scope](docs/DATA_AVAILABILITY.md), with both required
+publications listed in [REFERENCES](#references).
 
-1. **Genotype-disjoint reliability evaluation.** Evaluate 24- and 48-hour
-   individual-leaf prediction intervals across 21 held-out genotypes using
-   plant-balanced, assignment-averaged and genotype-macro metrics, separating
-   aggregate calibration from genotype-specific reliability.
-2. **Diagnosis of heterogeneous uncertainty failures.** Examine genotype-specific
-   coverage, plant replication, development-assignment sensitivity, temporal
-   overlap, directional misses and historical leaf-area dynamics. These
-   diagnostics characterize failures without establishing biological causation.
-3. **Retrospective adaptive conformal calibration.** Compare balanced CQR (U5)
-   with size-adaptive CQR (SA-CQR) and size-and-growth-adaptive CQR (SGA-CQR) under
-   paired configurations. These are exploratory comparisons informed by earlier
-   outer-test diagnostics, without independent prospective validation.
+## EXAMPLES AND EXPERIMENTAL RESULTS
 
-The contribution is an empirical reliability framework. No new finite-sample
-coverage theorem or independently validated forecasting architecture is claimed.
+### Example 1 — Individual-leaf forecasting
 
-## Experimental protocol
+The point-forecasting benchmark compares persistence, Ridge regression and
+histogram gradient boosting (HGB). Persistence carries the latest observed area
+forward; Ridge provides a regularized linear predictor; HGB represents nonlinear
+relationships among the historical features. Genotype-held-out testing evaluates
+generalization to an unseen genetic background, with nested genotype-based model
+selection for the fitted predictors.
 
-![LeafShift-CP experimental workflow](figures/main/F1_workflow.png)
+![Point forecasting results](figures/main/F2_point_forecasting.png)
 
-*Figure 1 — Dataset and experimental workflow.* Original PhenoLeaf-TS RGB imagery
-and leaf-instance masks illustrate projected visible-area extraction. Six
-historical observations support 24- and 48-hour forecasts. Leave-one-genotype-out
-evaluation separates 15 fitting, five calibration and one excluded test genotype.
-The unchanged manuscript figure is included with permission;
-[provider attribution](#dataset-provenance-and-access) and
-[permission scope](docs/DATA_AVAILABILITY.md) apply.
+HGB achieved genotype-macro mean absolute errors of **309.92 px² at 24 hours**
+and **518.51 px² at 48 hours**. These
+[archived point-model results](results/paper_tables/main/Table_02_Point_Forecasting_Baselines.csv)
+describe forecasting accuracy, but accuracy alone does not establish whether
+prediction intervals cover future observations reliably. The interval experiments
+below use their own disjoint fitting/calibration protocol.
 
-## Key experimental findings
+### Example 2 — Conformal prediction and coverage
 
-| Benchmark component | Scope |
-|---|---|
-| *Arabidopsis* genotypes | 21 |
-| Plants | 318 |
-| Derived forecasting windows | 228,645 |
-| Forecasting horizons | 24 and 48 hours |
-| Original conformal procedures | Nine: U0–U8 |
-| Development assignments | Four paired assignments per held-out genotype |
+The nine procedures compare how calibration scores and their empirical
+representation affect uncertainty estimates. Pooled calibration gives every
+window equal mass; genotype–plant-balanced calibration distributes mass equally
+across genotypes and then plants, with windows sharing their plant's mass.
+U0/U1 use absolute residuals, U2/U3 normalize residuals by historical size,
+U4/U5 use conformalized quantile regression (CQR), and U6/U7 calibrate residuals
+within historical-size Mondrian strata. In each pair, the first procedure is
+pooled and the second balanced. U8 adds retrospective trajectory balancing within
+plants as a sensitivity analysis.
 
-| Metric | 24 h | 48 h |
-|---|---:|---:|
-| HGB genotype-macro MAE (px²) | 309.92 | 518.51 |
-| U5 genotype-macro coverage | 89.97120% | 90.04006% |
-| Lowest observed genotype coverage | 82.217% | 76.393% |
-| Genotypes below 90% coverage | 8/21 | 6/21 |
-| SGA-CQR score reduction vs U5 (px²) | 9.049 | 24.133 |
+![Conformal prediction performance](figures/main/F3_coverage_efficiency.png)
 
-HGB denotes histogram gradient boosting. Point-forecast MAE comes from the
-point-model benchmark; coverage and interval scores follow the conformal
-evaluation protocol. Values are preserved archived results, not newly fitted
-results from repository preparation.
+Higher empirical coverage generally comes with wider intervals, so interval
+score is used to assess width and miss penalties together. Balanced CQR, U5,
+attained genotype-macro coverages of **89.97120%** and **90.04006%** at 24 and
+48 hours. The [conformal performance table](results/paper_tables/main/Table_03_Conformal_Performance.csv)
+preserves coverage, width and score for all U0–U8 procedures. Residual families
+center intervals on mean predictions; CQR calibrates lower and upper quantile
+predictions using the implemented nonnegative-expansion convention. Comparisons
+across these families concern complete forecasting-and-calibration pipelines.
 
-**Near-nominal average coverage conceals substantial genotype-specific
-undercoverage.** The SGA-CQR score reductions are retrospective empirical
-improvements; worst-genotype undercoverage remains unresolved.
-See the [point-forecast table](results/paper_tables/main/Table_02_Point_Forecasting_Baselines.csv),
-[conformal table](results/paper_tables/main/Table_03_Conformal_Performance.csv) and
-[paired adaptive comparisons](experiments/P3/P3_7/P3_7_paired_summary.csv).
+![Genotype-specific reliability](figures/main/F4_genotype_reliability.png)
 
-## Experimental design and conformal methods
+The macro average hides substantial heterogeneity: **eight of 21 genotypes at
+24 hours and six of 21 at 48 hours** remained below the nominal 90% target.
+The lowest observed genotype coverages were **82.217%** and **76.393%**,
+respectively. Equal-weight averaging allows higher coverage in some genotypes
+to offset deficits in others; it does not protect each excluded genotype.
+The implemented empirical weighted quantiles do not establish a coverage
+guarantee under arbitrary genotype shift.
 
-### Forecasting and evaluation
+### Example 3 — Understanding uncertainty failures
 
-PhenoLeaf-TS supplies persistent leaf-instance measurements. Each forecast uses
-six preceding retained leaf-area observations. The 29 historical predictors
-combine areas, relative observation times, adjacent area changes and rates, and
-seven summaries. Identifiers and future targets are excluded from the predictors.
+Genotype-specific diagnostics connect an aggregate reliability result to the
+plants and observations behind it. [Development-assignment sensitivity](figures/main/F5_assignment_reliability.png)
+examines changes in the fitting/calibration composition without introducing new
+test plants. [Temporal thinning](figures/main/F6_nonoverlapping_window_sensitivity.png)
+evaluates selected nonoverlapping forecast intervals using the existing U5
+predictions and calibration; historical spans and biological clustering can
+still overlap. Eleven genotypes had fewer than eight plants, making replication
+an important limitation despite the large number of derived windows.
 
-For each held-out genotype, the other 20 genotypes are partitioned into **15
-fitting and five calibration genotypes**, using four paired development
-assignments. The excluded genotype supplies test outcomes at 24 and 48 hours.
-The same held-out test plants and windows are reused across those assignments.
+![Directional miscoverage](figures/main/Figure_F7_Directional_Miscoverage.png)
 
-Evaluation averages windows within plants, gives plants equal influence within
-genotype, averages assignments within genotype, then weights the 21 genotypes
-equally. The **228,645 windows are repeated prediction opportunities, not 228,645
-independent biological observations**. Overlapping histories and shared plants
-create dependence, and assignments are not independent biological replicates.
+An upper-tail miss occurs when the observed future area exceeds the predicted
+upper bound; a lower-tail miss occurs below the lower bound. At both horizons,
+more targets exceeded the upper bound than fell below the lower bound,
+indicating asymmetric undercoverage.
 
-### Original procedures U0–U8
+[Historical size and area-change associations](figures/main/Figure_F8_Growth_Size_Associations.png)
+further characterize where these failures occur, including analyses within
+coarse size strata. These are retrospective measurement-level associations.
+They do not establish a physiological growth mechanism or biological causation:
+orientation, overlap, occlusion and segmentation can also affect visible area.
 
-| Procedure | Score or construction | Calibration aggregation |
-|---|---|---|
-| U0 | Absolute residuals | Pooled windows |
-| U1 | Absolute residuals | Genotype–plant balanced |
-| U2 | Residuals normalized by historical size | Pooled windows |
-| U3 | Residuals normalized by historical size | Genotype–plant balanced |
-| U4 | Conformalized quantile regression (CQR) | Pooled windows |
-| U5 | Conformalized quantile regression (CQR) | Genotype–plant balanced |
-| U6 | Absolute residuals within historical-size strata | Pooled within each stratum |
-| U7 | Absolute residuals within historical-size strata | Balanced within each stratum |
-| U8 | Retrospective trajectory-balanced residual sensitivity | Genotype–plant–trajectory balanced |
+### Example 4 — Adaptive conformal calibration
 
-**Pooled calibration** gives each calibration window equal mass.
-**Genotype–plant-balanced calibration** distributes mass equally across genotypes
-and then plants, with windows sharing their plant's mass. Its weighted quantiles
-are empirical; the weighting does not establish coverage under arbitrary
-genotype shift.
+Size-adaptive CQR (SA-CQR) and size-and-growth-adaptive CQR (SGA-CQR) investigate
+whether the calibration correction can respond to historical state. SA-CQR uses
+historical leaf size; SGA-CQR additionally incorporates recent projected-area
+change. Their comparison with U5 retains matched fitting, calibration and test
+assignments and the base quantile-model comparison.
 
-Absolute-residual methods calibrate errors around mean predictions.
-Historical-size normalization rescales errors using area observed before the
-forecast. CQR calibrates lower and upper quantile predictions, using the
-implemented nonnegative-expansion convention. Size-Mondrian methods estimate
-separate thresholds within historical-size strata. U8 adds equal weighting of
-leaf trajectories within plants as a retrospective calibration sensitivity.
-Comparisons across residual and CQR families compare complete pipelines with
-different fitted objectives.
+![Adaptive CQR comparison](figures/main/Figure_F9_Adaptive_CQR_Performance.png)
 
-### Retrospective adaptive extensions
+SGA-CQR reduced mean interval score relative to U5 by **9.049 px² at 24 hours**
+and **24.133 px² at 48 hours** in the
+[paired retrospective comparisons](experiments/P3/P3_7/P3_7_paired_summary.csv)
+and [adaptive method summary](experiments/P3/P3_6/P3_6_method_summary.csv).
+These are small empirical improvements, and worst-genotype undercoverage remains
+unresolved. The extensions were investigated after earlier outer-test diagnostics;
+the results do not establish independent validation or prospective superiority.
 
-**SA-CQR** scales the CQR correction using historical leaf size.
-**SGA-CQR** additionally uses historical area-change dynamics. Both retain the
-base quantile-model comparison under matched fitting, calibration and test
-assignments. They differ from size-Mondrian residual calibration and are not
-additional members of U0–U8. Their exploratory, post-diagnostic evaluation
-requires a subsequent independent assessment before claims of prospective
-superiority.
+The experiments distinguish forecasting accuracy, aggregate calibration and
+genotype-specific reliability. Average coverage or a modest score improvement
+does not resolve the failures observed for particular excluded groups.
+Supplementary evidence covers [growth associations (S1)](figures/supplementary/Figure_S1_Exploratory_Growth_Associations.png),
+[interval width and biological scale (S2)](figures/supplementary/Figure_S2_Interval_Width_and_Leaf_Area.png),
+[replication sensitivity (S3)](figures/supplementary/Figure_S3_Replication_Sensitivity.png)
+and [incremental growth-adaptation value (S4)](figures/supplementary/Figure_S4_Growth_Incremental_Value.png).
+The [figure/table map](docs/FIGURE_TABLE_MAP.csv) traces these publication assets
+to their implementations and genuine archived numerical inputs.
 
-## About this public research release
+## RUNNING THE TOOL
 
-LeafShift-CP is the curated public research release accompanying this study on
-conformal prediction reliability under genotype shift. The research was developed
-within a larger private working repository containing intermediate experiments,
-development records, original dataset-processing materials and internal
-validation artifacts.
+The research implementations are organized by experimental stage:
+[src/E0/](src/E0/) contains dataset audits and leaf-area extraction;
+[src/E1/](src/E1/) contains forecasting baselines;
+[src/E2/](src/E2/) and [src/E3/](src/E3/) contain conformal experiments;
+and [src/P0/](src/P0/), [src/P1/](src/P1/), [src/P2/](src/P2/) and
+[src/P3/](src/P3/) contain statistical analyses, reliability diagnostics and
+adaptive comparisons. [scripts/](scripts/) provides verification, planning and
+supported reproduction entry points.
 
-This public distribution brings together the original research implementations,
-finalized experimental configurations, authorized derived evidence, publication
-figures, verification tools and documentation relevant to the reported findings.
-Scientific implementations and archived numerical results have been preserved.
+### Installation and immediate inspection
 
-Internal development materials, duplicate intermediate artifacts, restricted
-source data and private records are excluded to keep the release focused.
-The public repository does not contain every intermediate experiment or the
-complete development history. Curation did not change the scientific methods or
-results; the private workspace is not a separate published research source.
-
-## Repository navigation
-
-### Where to find the research evidence
-
-| Location | What reviewers can inspect |
-|---|---|
-| [src/](src/) | Original scientific implementations and verification/workflow modules |
-| [configs/](configs/) | Genotype assignments and uncertainty protocol |
-| [experiments/](experiments/) | Authorized archived experiment metrics and statistical summaries |
-| [results/](results/) | Paper tables, numerical evidence and validation receipt |
-| [figures/main/](figures/main/) | Original manuscript Figures 1–9 |
-| [figures/supplementary/](figures/supplementary/) | Publication Figures S1–S4 |
-| [figures/rebuilt/](figures/rebuilt/) | Original plotting implementations and numerical inputs |
-| [scripts/](scripts/) | Verification, workflow planning and table-generation entry points |
-| [tests/](tests/) | Integrity, import and safe workflow-dispatch tests |
-| [Figure/table provenance](docs/FIGURE_TABLE_MAP.csv) | Manuscript numbering, assets, implementations and archived inputs |
-| [Reproducibility scope](docs/REPRODUCIBILITY.md) | Verification, historical replay and full-training boundaries |
-| [External-data recipe](docs/EXTERNAL_DATA_RECIPE.md) | Authorized dataset requirements and future full-run dependencies |
-
-Follow **manuscript result → figure/table → archived numerical evidence →
-implementation → verification or reproduction instructions**. The
-[source inventory](docs/FILE_INVENTORY.csv) records copied-file hashes; the
-[public manifest](docs/PUBLIC_UPLOAD_MANIFEST.csv) records the release's paths,
-sizes and hashes.
-
-## Quick start: installation and verification
-
-Use Python 3.12 and `uv`. Run from the repository root:
+Use Python 3.12 and `uv` from the repository root:
 
 ```bash
 uv venv .venv --python python3.12
 uv pip install --python .venv/bin/python -r requirements.txt
+```
+
+The first command creates a local environment; the second installs the recorded
+dependency versions. Then run:
+
+```bash
 .venv/bin/python scripts/verify.py
 .venv/bin/python -m unittest discover -s tests -v
 .venv/bin/python scripts/reproduce.py list
 .venv/bin/python scripts/reproduce.py plan conformal
 ```
 
-`uv venv` creates the environment; `uv pip install` installs the recorded
-dependency versions in [requirements.txt](requirements.txt).
-`verify.py` checks archived arithmetic, protocol rules and source-copy hashes;
-`unittest` checks integrity, scientific imports, source syntax and safe dispatch.
-`list` prints available workflows; `plan conformal` reports inputs and execution
-requirements without fitting models.
+`verify.py` checks copied-source integrity, archived aggregates and protocol
+rules. The tests check scientific imports, source syntax, feature construction
+and safe workflow dispatch. `list` displays available workflow routes;
+`plan conformal` reports required inputs and execution gates without fitting
+models. These commands inspect the available repository evidence; they do not
+perform full experimental reproduction.
 
-Lightweight validation passes **9 tests and 474 scientific/integrity checks**.
-These checks do not constitute complete experimental reproduction.
+### Research entry points
 
-## How to inspect or reproduce the findings
+- [scripts/verify.py](scripts/verify.py) performs read-only source-copy and
+  archived-result checks.
+- [scripts/reproduce.py](scripts/reproduce.py) plans workflows or dispatches the
+  original scripts into an isolated working copy, with explicit input and
+  expensive-execution requirements.
+- [scripts/generate_tables.py](scripts/generate_tables.py) re-aggregates genuine
+  fold and genotype metrics into manuscript tables; it writes generated outputs.
+- [src/E0/leaf_trajectory_audit.py](src/E0/leaf_trajectory_audit.py) extracts
+  leaf-instance areas and trajectory observations from authorized source masks
+  and the palette workbook.
+- [src/E1/run_simple_baselines.py](src/E1/run_simple_baselines.py) evaluates
+  persistence and the original time-aware linear-extrapolation baseline.
+  [train_ridge_logo.py](src/E1/train_ridge_logo.py) and
+  [train_boosting_logo.py](src/E1/train_boosting_logo.py) implement the fitted
+  Ridge and HGB genotype-held-out benchmarks.
+- [src/E2/run_conformal_baselines.py](src/E2/run_conformal_baselines.py) implements
+  pooled and balanced residual calibration on the original primary split.
+  [src/E3/run_cqr_baselines.py](src/E3/run_cqr_baselines.py) implements the CQR
+  comparisons; the provenance map identifies the final archived experiment inputs.
+- [src/P3/P3_2_directional_miscoverage.py](src/P3/P3_2_directional_miscoverage.py)
+  computes directional summaries from U5 prediction-level archives, which are
+  required inputs and are not bundled.
+- [src/P3/P3_6_adaptive_cqr.py](src/P3/P3_6_adaptive_cqr.py) implements matched
+  U5, SA-CQR and SGA-CQR experiments, with pilot and full modes.
+  Execution requires the original generated data and calibration dependencies.
 
-| Level | Available work | Evidence and boundary |
-|---|---|---|
-| **1 — Repository verification** | Run the quick-start checks and inspect compact archived tables. | Current validation checks 275 original copies and 199 scientific/protocol quantities; imports and safe dispatch are tested. |
-| **2 — Archived evidence inspection and replay** | Follow table/figure provenance and supported `tables`, `growth-robustness`, `adaptive-comparisons` or `figures` workflows. | Historical records cover table re-aggregation, selected P3 comparisons and 12 numerical figure replays from genuine archived inputs. These replays were not rerun for this README update. |
-| **3 — Full experimental reproduction** | Acquire authorized source data, reconstruct historical processing/windows, fit models and calibrate/evaluate intervals. | Requires external files, generated intermediates and substantially more computation than archive checks. Full end-to-end extraction and model training were not independently reproduced in public-release validation. |
+### Verification, replay and full reproduction
 
-Replay requires the real inputs specified by each implementation; coarse workflow
-plans do not enumerate every CSV dependency. Some detailed historical stdout
-records are not bundled. Figure 1 is an unchanged manuscript asset, not an output
-of the numerical plotting workflows.
+**1. Immediate verification** uses the bundled implementations and compact
+archived evidence. It checks consistency and selected numerical results without
+training models or generating figures.
 
-Use [REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) for replay commands and evidence
-levels, and [EXTERNAL_DATA_RECIPE.md](docs/EXTERNAL_DATA_RECIPE.md) for full-run
-inputs, explicit execution gates and unresolved reconstruction requirements.
-Historical training cost and complete environment portability have not been
-validated here. Missing inputs are not replaced with fabricated data.
+**2. Supported replay** re-aggregates tables or reruns selected analyses and
+numerical plots when their real required inputs are available. Historical records
+cover table generation, selected P3 comparisons and 12 numerical figure replays;
+these were not rerun for this README revision. Figure 1 is an unchanged manuscript
+asset, not a numerical plotting output.
 
-## Figure and table evidence map
+**3. Full experimental reproduction** requires an authorized external
+PhenoLeaf-TS dataset, historical preprocessing, generated windows, model fitting
+and calibration. Many original research scripts require files absent from the
+public distribution. Workflow plans are useful for inspection but do not list
+every implicit CSV dependency, and unit tests do not establish complete scientific
+reproducibility.
 
-| Manuscript figure | Publication asset |
-|---|---|
-| Figure 1 — Dataset and experimental workflow | [Figure 1](figures/main/F1_workflow.png) |
-| Figure 2 — Point forecasting performance | [Figure 2](figures/main/F2_point_forecasting.png) |
-| Figure 3 — Coverage–efficiency comparison | [Figure 3](figures/main/F3_coverage_efficiency.png) |
-| Figure 4 — Genotype-specific reliability | [Figure 4](figures/main/F4_genotype_reliability.png) |
-| Figure 5 — Development-assignment sensitivity | [Figure 5](figures/main/F5_assignment_reliability.png) |
-| Figure 6 — Temporal thinning | [Figure 6](figures/main/F6_nonoverlapping_window_sensitivity.png) |
-| Figure 7 — Directional miscoverage | [Figure 7](figures/main/Figure_F7_Directional_Miscoverage.png) |
-| Figure 8 — Historical growth and size associations | [Figure 8](figures/main/Figure_F8_Growth_Size_Associations.png) |
-| Figure 9 — Adaptive CQR comparison | [Figure 9](figures/main/Figure_F9_Adaptive_CQR_Performance.png) |
-| Figure S1 — Exploratory growth associations | [Figure S1](figures/supplementary/Figure_S1_Exploratory_Growth_Associations.png) |
-| Figure S2 — Interval width and biological scale | [Figure S2](figures/supplementary/Figure_S2_Interval_Width_and_Leaf_Area.png) |
-| Figure S3 — Replication sensitivity | [Figure S3](figures/supplementary/Figure_S3_Replication_Sensitivity.png) |
-| Figure S4 — Incremental value of growth adaptation | [Figure S4](figures/supplementary/Figure_S4_Growth_Incremental_Value.png) |
+See [REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) for evidence levels and supported
+replay commands, [EXTERNAL_DATA_RECIPE.md](docs/EXTERNAL_DATA_RECIPE.md) for
+external inputs and execution gates, and
+[FIGURE_TABLE_MAP.csv](docs/FIGURE_TABLE_MAP.csv) for result-to-code traceability.
 
-| Manuscript table | Archived numerical evidence |
-|---|---|
-| Table 1 — Point forecasting | [Point-model metrics](results/paper_tables/main/Table_02_Point_Forecasting_Baselines.csv) |
-| Table 2 — Conformal procedures | [U0–U8 performance](results/paper_tables/main/Table_03_Conformal_Performance.csv) |
-| Table 3 — Adaptive CQR | [Adaptive method summary](experiments/P3/P3_6/P3_6_method_summary.csv) |
+## ABOUT THIS PUBLIC RELEASE
 
-Export filenames retain their original research numbering. The
-[figure/table map](docs/FIGURE_TABLE_MAP.csv) uses final manuscript numbering and
-identifies implementations and input dependencies.
+This repository is a curated public release extracted from a larger private
+research workspace. It preserves the original scientific implementations,
+finalized configurations, authorized derived results and publication figures
+while excluding restricted source datasets, intermediate development artifacts,
+unnecessary duplicate artifacts and internal records. Scientific methods and
+numerical results were not changed for public distribution. The public Git history is an organized
+release history, not the complete chronology of the private development process.
 
-## Dataset provenance and access
+The original raw dataset is not hosted here. Its exact historical archive
+version/checksum was not retained, and the audited source inventory lacked
+260 Ba4-1 RGB files. Full end-to-end extraction and training were not independently
+reproduced during final public-release validation. These boundaries are retained
+in the [dataset documentation](data/README.md) and
+[reproducibility record](docs/REPRODUCIBILITY.md).
 
-Experiments use **PhenoLeaf-TS**. Obtain original data through the
-[official dataset provider](https://huggingface.co/datasets/rick77a/PhenoLeaf_TS)
-under its governing terms; see [dataset acquisition](data/README.md).
-The [additional provider resource](https://arabidopsis-rgb.latrobe.edu.au) is
-context/access information, not another established experimental input.
+Original software is licensed under [MIT](LICENSE), with
+`Copyright (c) 2026 Mouad el Baz, Sahil Khan`.
+Dataset materials, derived-data files, figures and third-party dependencies have
+separate rights; the software license does not automatically cover them.
 
-Both provider-requested publications must be cited:
+## AUTHORS
 
-1. Sarić, Azam, Khan and Čustović (2026). *PhenoLeaf-TS: A Time-Series Benchmark
-   for Leaf Instance Segmentation, Tracking, and Growth Stage Classification*.
-   ECCV 2026. [DOI: 10.1007/978-3-032-37359-5_23](https://doi.org/10.1007/978-3-032-37359-5_23).
-2. Sarić, Kashkan, Lewsey, Panzarová, Trtílek, Čustović and Whelan (2026).
+**Mouad el Baz** — First author.
+
+**Sahil Khan** — Second author and corresponding author.
+
+**Qasim Khan** — Third author.
+
+Use [CITATION.cff](CITATION.cff) to cite the code with all three scientific
+authors, and identify the version used. The companion manuscript awaits
+submission; no acceptance, journal publication or publication DOI is claimed
+for the LeafShift-CP paper.
+
+## REFERENCES
+
+1. Sarić, R., Azam, B., Khan, S., and Čustović, E. (2026).
+   *PhenoLeaf-TS: A Time-Series Benchmark for Leaf Instance Segmentation,
+   Tracking, and Growth Stage Classification*. In *Computer Vision — ECCV 2026*,
+   Lecture Notes in Computer Science, **17050**, pp. 407–424. Springer.
+   [DOI: 10.1007/978-3-032-37359-5_23](https://doi.org/10.1007/978-3-032-37359-5_23).
+2. Sarić, R., Kashkan, I., Lewsey, M. G., Panzarová, K., Trtílek, M.,
+   Čustović, E., and Whelan, J. (2026).
    *ALeRT: An RGB-based deep learning pipeline and benchmark for automated
    phenotyping of rosette and leaf traits in Arabidopsis thaliana*.
-   Computers and Electronics in Agriculture.
+   *Computers and Electronics in Agriculture*, article **112620**.
    [DOI: 10.1016/j.compag.2026.112620](https://doi.org/10.1016/j.compag.2026.112620).
 
-ALeRT provides RGB phenotyping context. This study does not assert experimental
-use of its dataset or implementation.
-
-## Reproducibility boundaries and limitations
-
-- **Validity:** empirical weighted quantiles do not guarantee coverage under
-  arbitrary genotype shift.
-- **Adaptive-method selection:** SA-CQR and SGA-CQR were evaluated retrospectively
-  after earlier outer-test diagnostics.
-- **Biological replication:** eleven genotypes had fewer than eight plants.
-- **Dependence:** forecast histories/windows overlap; leaves share plants and
-  development assignments reuse held-out test outcomes.
-- **Measurement:** visible leaf area is segmentation-derived and can reflect
-  orientation, occlusion and annotation effects as well as growth.
-- **Dataset identity:** the exact original source archive version/checksum was
-  not retained.
-- **Historical inventory:** the audited source lacked 260 Ba4-1 RGB files.
-- **Full reconstruction:** end-to-end extraction and model training have not
-  been independently reproduced as part of final public-release validation.
-
-Detailed lineage, optional dependency and bootstrap/replay caveats remain in
-the [reproducibility documentation](docs/REPRODUCIBILITY.md).
-
-## Permissions, licensing and citation
+Access the original dataset through the
+[official PhenoLeaf-TS provider](https://huggingface.co/datasets/rick77a/PhenoLeaf_TS),
+following its terms and citing both publications. The
+[additional provider resource](https://arabidopsis-rgb.latrobe.edu.au) is
+context/access information, not another established experimental input.
+ALeRT provides RGB phenotyping context; use of its dataset or implementation in
+these experiments is not asserted.
 
 Mouad el Baz, the first author, obtained permission from the PhenoLeaf-TS dataset
 corresponding author, Dr. Rijad Sarić, for the use of the specified research
-materials and derived outputs. The original dataset remains available from its
-official provider.
-
-This release includes the authorized original manuscript Figure 1 and numerical
-research outputs, including aggregate statistics, plant-level count/QC summaries
-and conformal evaluation results. This specific permission does not grant
-unrestricted redistribution of PhenoLeaf-TS. Original source RGB archives,
-segmentation masks and detailed observation/window/leaf exports remain excluded.
-Permission correspondence is private and is not included. See
-[data availability](docs/DATA_AVAILABILITY.md),
-[authorization scope](docs/FINAL_RELEASE_APPROVALS.md) and
+materials and derived outputs. This includes the authorized original manuscript
+Figure 1 and the numerical research outputs provided here. The original dataset
+remains available from its provider. This permission does not grant unrestricted
+redistribution of source RGB archives, segmentation masks or detailed
+observation/window/leaf exports, which remain excluded. Private correspondence is
+not published. See [data availability](docs/DATA_AVAILABILITY.md),
+[permission scope](docs/FINAL_RELEASE_APPROVALS.md) and
 [public exclusions](docs/PUBLIC_EXCLUSIONS.md).
-
-Original software is licensed under [MIT](LICENSE):
-`Copyright (c) 2026 Mouad el Baz, Sahil Khan`.
-The software license does not automatically cover the dataset, source imagery,
-masks, derived-data files, rendered figures or third-party dependencies.
-Scientific authorship is separate from software copyright attribution.
-
-Use [CITATION.cff](CITATION.cff), which preserves all three scientific authors in
-order, and identify the code version used. The companion manuscript awaits
-submission; no paper acceptance, journal publication or publication DOI is
-claimed.
