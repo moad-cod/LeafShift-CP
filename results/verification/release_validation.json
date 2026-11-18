@@ -1,0 +1,3473 @@
+{
+  "date": "2026-11-18",
+  "status": "PASS: exact selected scientific/code inputs; final documentation/manifest hashes rechecked",
+  "unit_tests": {
+    "run": 9,
+    "passed": 9,
+    "failed": 0
+  },
+  "numerical_and_copy_integrity": {
+    "checks": 473,
+    "passed": 473,
+    "failed": 0
+  },
+  "scientific_numeric_checks": 199,
+  "byte_identical_original_copies": 274,
+  "code_and_existing_scientific_artifacts_unchanged": 324,
+  "canonical_media_hashes_against_originals": 36,
+  "decoded_or_visually_inspected_media": false,
+  "CITATION_cff_parsed": "PyYAML 6.0.1",
+  "MIT_software_scope": "Two holders explicitly confirmed agreement and licensing authority; data/figures separately scoped",
+  "target_repository": {
+    "url": "https://github.com/moad-cod/LeafShift-CP",
+    "read_only_metadata_checked": true,
+    "visibility_reported": "public",
+    "reported_size_kb": 0,
+    "synchronized_candidate_pushed": false,
+    "candidate_public_access_verified": false
+  },
+  "secrets_private_paths_in_selected_text": "No stated credential/private-path patterns found; binary metadata not decoded",
+  "selected_raw_or_observation_exports": 0,
+  "selected_Figure1_assets": 0,
+  "private_review_records_selected": 0,
+  "routing": "list and plan conformal succeeded without experiment execution",
+  "historical_replays": "Not repeated; no model training, plot regeneration or numerical CSV generation",
+  "github_mutation_or_journal_submission": false,
+  "checks": [
+    {
+      "name": "copy integrity: src/E0/bidirectional_leaf_identity_audit.py",
+      "status": "pass",
+      "source": "src/E0/bidirectional_leaf_identity_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/dataset_structure_audit.py",
+      "status": "pass",
+      "source": "src/E0/dataset_structure_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/finalize_e0_protocol.py",
+      "status": "pass",
+      "source": "src/E0/finalize_e0_protocol.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/forecast_feasibility_audit.py",
+      "status": "pass",
+      "source": "src/E0/forecast_feasibility_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/leaf_anomaly_review.py",
+      "status": "pass",
+      "source": "src/E0/leaf_anomaly_review.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/leaf_identity_consistency_audit.py",
+      "status": "pass",
+      "source": "src/E0/leaf_identity_consistency_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/leaf_identity_prevalence_audit.py",
+      "status": "pass",
+      "source": "src/E0/leaf_identity_prevalence_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/leaf_trajectory_audit.py",
+      "status": "pass",
+      "source": "src/E0/leaf_trajectory_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/leaf_trajectory_quality_audit.py",
+      "status": "pass",
+      "source": "src/E0/leaf_trajectory_quality_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/manual_identity_review.py",
+      "status": "pass",
+      "source": "src/E0/manual_identity_review.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/palette_completeness_audit.py",
+      "status": "pass",
+      "source": "src/E0/palette_completeness_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/temporal_sampling_audit.py",
+      "status": "pass",
+      "source": "src/E0/temporal_sampling_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/time_aware_feasibility_audit.py",
+      "status": "pass",
+      "source": "src/E0/time_aware_feasibility_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/unmapped_color_audit.py",
+      "status": "pass",
+      "source": "src/E0/unmapped_color_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E0/visual_leaf_anomaly_audit.py",
+      "status": "pass",
+      "source": "src/E0/visual_leaf_anomaly_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E1/analyze_baseline_generalization.py",
+      "status": "pass",
+      "source": "src/E1/analyze_baseline_generalization.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E1/build_forecasting_manifest.py",
+      "status": "pass",
+      "source": "src/E1/build_forecasting_manifest.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E1/consolidate_e1_results.py",
+      "status": "pass",
+      "source": "src/E1/consolidate_e1_results.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E1/evaluate_genotype_exposure.py",
+      "status": "pass",
+      "source": "src/E1/evaluate_genotype_exposure.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E1/run_simple_baselines.py",
+      "status": "pass",
+      "source": "src/E1/run_simple_baselines.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E1/train_boosting_logo.py",
+      "status": "pass",
+      "source": "src/E1/train_boosting_logo.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E1/train_ridge_logo.py",
+      "status": "pass",
+      "source": "src/E1/train_ridge_logo.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E1/validate_genotype_folds.py",
+      "status": "pass",
+      "source": "src/E1/validate_genotype_folds.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E2/analyze_conditional_reliability.py",
+      "status": "pass",
+      "source": "src/E2/analyze_conditional_reliability.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E2/analyze_interval_reliability.py",
+      "status": "pass",
+      "source": "src/E2/analyze_interval_reliability.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E2/prepare_uncertainty_protocol.py",
+      "status": "pass",
+      "source": "src/E2/prepare_uncertainty_protocol.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E2/run_conformal_baselines.py",
+      "status": "pass",
+      "source": "src/E2/run_conformal_baselines.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E2/validate_calibration_sensitivity.py",
+      "status": "pass",
+      "source": "src/E2/validate_calibration_sensitivity.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E3/compare_conformal_methods.py",
+      "status": "pass",
+      "source": "src/E3/compare_conformal_methods.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E3/diagnose_genotype_failures.py",
+      "status": "pass",
+      "source": "src/E3/diagnose_genotype_failures.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E3/run_cqr_baselines.py",
+      "status": "pass",
+      "source": "src/E3/run_cqr_baselines.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E3/run_mondrian_conformal.py",
+      "status": "pass",
+      "source": "src/E3/run_mondrian_conformal.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E3/run_normalized_conformal.py",
+      "status": "pass",
+      "source": "src/E3/run_normalized_conformal.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/E3/validate_leaf_size_reliability.py",
+      "status": "pass",
+      "source": "src/E3/validate_leaf_size_reliability.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P0/cqr_clipping_sensitivity.py",
+      "status": "pass",
+      "source": "src/P0/cqr_clipping_sensitivity.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P0/p05_evidence_audit.py",
+      "status": "pass",
+      "source": "src/P0/p05_evidence_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P0/u8_trajectory_balanced.py",
+      "status": "pass",
+      "source": "src/P0/u8_trajectory_balanced.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P0/weighted_quantile_sensitivity.py",
+      "status": "pass",
+      "source": "src/P0/weighted_quantile_sensitivity.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P1/p11_u5_prediction_export.py",
+      "status": "pass",
+      "source": "src/P1/p11_u5_prediction_export.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P1/p1_1_genotype_coverage_analysis.py",
+      "status": "pass",
+      "source": "src/P1/p1_1_genotype_coverage_analysis.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P1/p1_2_within_genotype_growth.py",
+      "status": "pass",
+      "source": "src/P1/p1_2_within_genotype_growth.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P1/p1_4_biological_scale_audit.py",
+      "status": "pass",
+      "source": "src/P1/p1_4_biological_scale_audit.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P2/p2_4_nonoverlapping_window_sensitivity.py",
+      "status": "pass",
+      "source": "src/P2/p2_4_nonoverlapping_window_sensitivity.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_1_analysis.py",
+      "status": "pass",
+      "source": "src/P3/P3_1_analysis.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_1_interpretation.py",
+      "status": "pass",
+      "source": "src/P3/P3_1_interpretation.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_2_directional_miscoverage.py",
+      "status": "pass",
+      "source": "src/P3/P3_2_directional_miscoverage.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_3_growth_directional.py",
+      "status": "pass",
+      "source": "src/P3/P3_3_growth_directional.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_3_inspect_features.py",
+      "status": "pass",
+      "source": "src/P3/P3_3_inspect_features.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_4_growth_robustness.py",
+      "status": "pass",
+      "source": "src/P3/P3_4_growth_robustness.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_5_size_controlled_growth.py",
+      "status": "pass",
+      "source": "src/P3/P3_5_size_controlled_growth.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_6_adaptive_cqr.py",
+      "status": "pass",
+      "source": "src/P3/P3_6_adaptive_cqr.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_6_calibration_inventory.py",
+      "status": "pass",
+      "source": "src/P3/P3_6_calibration_inventory.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_6_pipeline_inspection.py",
+      "status": "pass",
+      "source": "src/P3/P3_6_pipeline_inspection.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_7_paired_comparison.py",
+      "status": "pass",
+      "source": "src/P3/P3_7_paired_comparison.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: src/P3/P3_8_growth_incremental_value.py",
+      "status": "pass",
+      "source": "src/P3/P3_8_growth_incremental_value.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: configs/E1_1_genotype_folds.json",
+      "status": "pass",
+      "source": "configs/E1_1_genotype_folds.json",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: configs/E2_0_uncertainty_protocol.json",
+      "status": "pass",
+      "source": "configs/E2_0_uncertainty_protocol.json",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_10_bidirectional_matches.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_10_bidirectional_matches.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_10_transition_summary.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_10_transition_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_11_candidate_matches.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_11_candidate_matches.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_11_genotype_summary.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_11_genotype_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_11_sampled_transitions.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_11_sampled_transitions.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_1_genotype_summary.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_1_genotype_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_1_plant_manifest.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_1_plant_manifest.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_2_plant_quality_summary.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_2_plant_quality_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_3_genotype_forecast_summary.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_3_genotype_forecast_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_3_overall_forecast_summary.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_3_overall_forecast_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_3_plant_forecast_eligibility.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_3_plant_forecast_eligibility.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_4_temporal_sampling.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_4_temporal_sampling.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_5_genotype_summary.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_5_genotype_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_5_overall_summary.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_5_overall_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_5_plant_eligibility.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_5_plant_eligibility.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_6_genotype_quality.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_6_genotype_quality.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_7_event_summary.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_7_event_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E0/tables/E0_9_identity_consistency.csv",
+      "status": "pass",
+      "source": "experiments/E0/tables/E0_9_identity_consistency.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_0_window_integrity_summary.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_0_window_integrity_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_1_genotype_distribution.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_1_genotype_distribution.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_1_inner_folds.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_1_inner_folds.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_1_outer_folds.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_1_outer_folds.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_2_genotype_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_2_genotype_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_2_plant_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_2_plant_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_2_summary.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_2_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_3_genotype_comparison.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_3_genotype_comparison.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_3_paired_summary.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_3_paired_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_4_alpha_selection.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_4_alpha_selection.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_4_genotype_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_4_genotype_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_4_summary.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_4_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_5_genotype_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_5_genotype_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_5_hyperparameter_selection.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_5_hyperparameter_selection.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_5_summary.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_5_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_6_genotype_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_6_genotype_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_6_plant_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_6_plant_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_6_summary.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_6_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_7_genotype_differences.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_7_genotype_differences.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E1/tables/E1_7_paired_comparisons.csv",
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_7_paired_comparisons.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_0_genotype_distribution.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_0_genotype_distribution.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_0_split_audit.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_0_split_audit.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_1_calibration_thresholds.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_1_calibration_thresholds.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_1_genotype_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_1_genotype_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_1_plant_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_1_plant_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_1_summary.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_1_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_2_genotype_reliability.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_2_genotype_reliability.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_2_plant_scores.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_2_plant_scores.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_2_reliability_summary.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_2_reliability_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_3_conditional_genotype_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_3_conditional_genotype_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_3_conditional_summary.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_3_conditional_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_4_size_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_4_size_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_4_split_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_4_split_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E2/tables/E2_4_summary.csv",
+      "status": "pass",
+      "source": "experiments/E2/tables/E2_4_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_0_fold_size_summary.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_0_fold_size_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_0_paired_size_gaps.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_0_paired_size_gaps.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_0_size_reliability_summary.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_0_size_reliability_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_1_fold_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_1_fold_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_1_size_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_1_size_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_1_size_summary.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_1_size_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_1_summary.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_1_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_2_fold_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_2_fold_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_2_size_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_2_size_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_2_size_summary.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_2_size_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_2_summary.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_2_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_3_fold_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_3_fold_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_3_size_metrics.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_3_size_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_3_size_summary.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_3_size_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_3_summary.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_3_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_4_genotype_reliability.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_4_genotype_reliability.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_4_method_comparison.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_4_method_comparison.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_4_paired_comparisons.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_4_paired_comparisons.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_4_subgroup_comparison.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_4_subgroup_comparison.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_5_failure_overlap.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_5_failure_overlap.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_5_feature_associations.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_5_feature_associations.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E3/tables/E3_5_genotype_features.csv",
+      "status": "pass",
+      "source": "experiments/E3/tables/E3_5_genotype_features.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E4/tables/E4_0_association_robustness.csv",
+      "status": "pass",
+      "source": "experiments/E4/tables/E4_0_association_robustness.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E4/tables/E4_1_genotype_qc.csv",
+      "status": "pass",
+      "source": "experiments/E4/tables/E4_1_genotype_qc.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E4/tables/E4_1_plant_qc.csv",
+      "status": "pass",
+      "source": "experiments/E4/tables/E4_1_plant_qc.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E4/tables/E4_1b_genotype_diagnostics.csv",
+      "status": "pass",
+      "source": "experiments/E4/tables/E4_1b_genotype_diagnostics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E4/tables/E4_1b_qc_coverage_associations.csv",
+      "status": "pass",
+      "source": "experiments/E4/tables/E4_1b_qc_coverage_associations.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E4/tables/E4_2_adjusted_sensitivity.csv",
+      "status": "pass",
+      "source": "experiments/E4/tables/E4_2_adjusted_sensitivity.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E4/tables/E4_2_genotype_influence.csv",
+      "status": "pass",
+      "source": "experiments/E4/tables/E4_2_genotype_influence.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E4/tables/E4_3_leaf_match_summary.csv",
+      "status": "pass",
+      "source": "experiments/E4/tables/E4_3_leaf_match_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E4/tables/E4_3_matching_summary.csv",
+      "status": "pass",
+      "source": "experiments/E4/tables/E4_3_matching_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/E4/tables/E4_3_review_sample_summary.csv",
+      "status": "pass",
+      "source": "experiments/E4/tables/E4_3_review_sample_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4a/tables/P0_4a_fold_metrics.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4a/tables/P0_4a_fold_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4a/tables/P0_4a_genotype_differences.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4a/tables/P0_4a_genotype_differences.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4a/tables/P0_4a_paired_fold_differences.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4a/tables/P0_4a_paired_fold_differences.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4a/tables/P0_4a_summary.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4a/tables/P0_4a_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4a/tables/P0_4a_threshold_diagnostics.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4a/tables/P0_4a_threshold_diagnostics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4b/P0_4b_assignment_metrics.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4b/P0_4b_assignment_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4b/P0_4b_genotype_comparison.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4b/P0_4b_genotype_comparison.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4b/P0_4b_genotype_metrics.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4b/P0_4b_genotype_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4b/P0_4b_summary.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4b/P0_4b_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4c_U8/tables/U8_fold_metrics.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4c_U8/tables/U8_fold_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4c_U8/tables/U8_genotype_metrics.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4c_U8/tables/U8_genotype_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4c_U8/tables/U8_paired_genotype_differences.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4c_U8/tables/U8_paired_genotype_differences.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P0/P0_4c_U8/tables/U8_summary.csv",
+      "status": "pass",
+      "source": "experiments/P0/P0_4c_U8/tables/U8_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_1/statistics/tables/p1_assignment_variance.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_1/statistics/tables/p1_assignment_variance.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_1/statistics/tables/p1_assignment_variance_summary.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_1/statistics/tables/p1_assignment_variance_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_1/statistics/tables/p1_genotype_coverage_ci.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_1/statistics/tables/p1_genotype_coverage_ci.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_1/statistics/tables/p1_permutation_null.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_1/statistics/tables/p1_permutation_null.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_1/statistics/tables/p1_permutation_summary.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_1/statistics/tables/p1_permutation_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_1/statistics/tables/p1_plant_assignment_averaged_coverage.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_1/statistics/tables/p1_plant_assignment_averaged_coverage.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_1/tables/P1_1_U5_plant_assignment_coverage.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_1/tables/P1_1_U5_plant_assignment_coverage.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_1/tables/P1_1_U5_verified_fold_metrics.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_1/tables/P1_1_U5_verified_fold_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_2/tables/p1_growth_analysis_summary.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_2/tables/p1_growth_analysis_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_2/tables/p1_growth_coverage_genotype_context.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_2/tables/p1_growth_coverage_genotype_context.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_2/tables/p1_within_genotype_growth.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_2/tables/p1_within_genotype_growth.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_2/tables/p1_within_genotype_growth_span_matched.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_2/tables/p1_within_genotype_growth_span_matched.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_2/tables/p1_within_genotype_plant_pairs.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_2/tables/p1_within_genotype_plant_pairs.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_4/tables/p1_4_biological_scale_summary.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_4/tables/p1_4_biological_scale_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_4/tables/p1_4_genotype_scale_summary.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_4/tables/p1_4_genotype_scale_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P1/P1_4/tables/p1_4_plant_scale_summary.csv",
+      "status": "pass",
+      "source": "experiments/P1/P1_4/tables/p1_4_plant_scale_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P2/P2_4/tables/p2_4_genotype_comparison.csv",
+      "status": "pass",
+      "source": "experiments/P2/P2_4/tables/p2_4_genotype_comparison.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P2/P2_4/tables/p2_4_summary.csv",
+      "status": "pass",
+      "source": "experiments/P2/P2_4/tables/p2_4_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_1/P3_1_genotype_summary.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_1/P3_1_genotype_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_1/P3_1_subsampling_summary.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_1/P3_1_subsampling_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_2/P3_2_genotype_directional.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_2/P3_2_genotype_directional.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_2/P3_2_plant_directional.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_2/P3_2_plant_directional.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_3/P3_3_genotype_contrasts.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_3/P3_3_genotype_contrasts.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_3/P3_3_paired_plant_results.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_3/P3_3_paired_plant_results.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_3/P3_3_summary.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_3/P3_3_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_3/P3_3_support.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_3/P3_3_support.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_4/P3_4_robustness_summary.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_4/P3_4_robustness_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_5/P3_5_genotype_results.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_5/P3_5_genotype_results.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_5/P3_5_paired_plant_size.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_5/P3_5_paired_plant_size.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_5/P3_5_size_stratum_results.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_5/P3_5_size_stratum_results.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_5/P3_5_summary.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_5/P3_5_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_6/P3_6_full_fold_metrics.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_full_fold_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_6/P3_6_method_summary.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_method_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_6/P3_6_pilot_fold_metrics.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_pilot_fold_metrics.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_7/P3_7_genotype_differences.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_7/P3_7_genotype_differences.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_7/P3_7_paired_summary.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_7/P3_7_paired_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_8/P3_8_direct_comparison_summary.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_8/P3_8_direct_comparison_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: experiments/P3/P3_8/P3_8_genotype_differences.csv",
+      "status": "pass",
+      "source": "experiments/P3/P3_8/P3_8_genotype_differences.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: data/processed/forecasting/manifest_metadata.json",
+      "status": "pass",
+      "source": "data/processed/forecasting/manifest_metadata.json",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: data/manifests/manifest_metadata.json",
+      "status": "pass",
+      "source": "data/processed/forecasting/manifest_metadata.json",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: manuscript/tables/main/Table_01_Dataset_and_Task.csv",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_01_Dataset_and_Task.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: results/paper_tables/main/Table_01_Dataset_and_Task.csv",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_01_Dataset_and_Task.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: manuscript/tables/main/Table_01_Dataset_and_Task.md",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_01_Dataset_and_Task.md",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: results/paper_tables/main/Table_01_Dataset_and_Task.md",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_01_Dataset_and_Task.md",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: manuscript/tables/main/Table_02_Point_Forecasting_Baselines.csv",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_02_Point_Forecasting_Baselines.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: results/paper_tables/main/Table_02_Point_Forecasting_Baselines.csv",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_02_Point_Forecasting_Baselines.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: manuscript/tables/main/Table_02_Point_Forecasting_Baselines.md",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_02_Point_Forecasting_Baselines.md",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: results/paper_tables/main/Table_02_Point_Forecasting_Baselines.md",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_02_Point_Forecasting_Baselines.md",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: manuscript/tables/main/Table_03_Conformal_Performance.csv",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_03_Conformal_Performance.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: results/paper_tables/main/Table_03_Conformal_Performance.csv",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_03_Conformal_Performance.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: manuscript/tables/main/Table_03_Conformal_Performance.md",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_03_Conformal_Performance.md",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: results/paper_tables/main/Table_03_Conformal_Performance.md",
+      "status": "pass",
+      "source": "manuscript/tables/main/Table_03_Conformal_Performance.md",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: manuscript/tables/supplementary/P2_U0_U8_genotype_summary.csv",
+      "status": "pass",
+      "source": "manuscript/tables/supplementary/P2_U0_U8_genotype_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: results/paper_tables/supplementary/P2_U0_U8_genotype_summary.csv",
+      "status": "pass",
+      "source": "manuscript/tables/supplementary/P2_U0_U8_genotype_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: manuscript/tables/supplementary/P2_U0_U8_verified_summary.csv",
+      "status": "pass",
+      "source": "manuscript/tables/supplementary/P2_U0_U8_verified_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: results/paper_tables/supplementary/P2_U0_U8_verified_summary.csv",
+      "status": "pass",
+      "source": "manuscript/tables/supplementary/P2_U0_U8_verified_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F2_point_forecasting/F2_point_forecasting_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/F2_point_forecasting/F2_point_forecasting_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F2_point_forecasting/plot_figure2.py",
+      "status": "pass",
+      "source": "figures/rebuilt/F2_point_forecasting/plot_figure2.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F3_method_comparison/F3_method_comparison_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/F3_method_comparison/F3_method_comparison_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F3_method_comparison/plot_figure3.py",
+      "status": "pass",
+      "source": "figures/rebuilt/F3_method_comparison/plot_figure3.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F4_genotype_reliability/F4_U5_genotype_reliability_input.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/F4_genotype_reliability/F4_U5_genotype_reliability_input.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F4_genotype_reliability/plot_figure4_layout_v2.py",
+      "status": "pass",
+      "source": "figures/rebuilt/F4_genotype_reliability/plot_figure4_layout_v2.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F5_assignment_reliability/F5_U5_assignment_coverage_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/F5_assignment_reliability/F5_U5_assignment_coverage_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F5_assignment_reliability/plot_figure5.py",
+      "status": "pass",
+      "source": "figures/rebuilt/F5_assignment_reliability/plot_figure5.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F6_time_thinning/F6_time_thinning_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/F6_time_thinning/F6_time_thinning_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F6_time_thinning/plot_figure6.py",
+      "status": "pass",
+      "source": "figures/rebuilt/F6_time_thinning/plot_figure6.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F7_directional_miscoverage/Figure_F7_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/F7_directional_miscoverage/Figure_F7_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F7_directional_miscoverage/plot_figure_f7.py",
+      "status": "pass",
+      "source": "figures/rebuilt/F7_directional_miscoverage/plot_figure_f7.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F8_growth_size_associations/Figure_F8_genotype_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/F8_growth_size_associations/Figure_F8_genotype_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F8_growth_size_associations/Figure_F8_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/F8_growth_size_associations/Figure_F8_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F8_growth_size_associations/plot_figure_f8.py",
+      "status": "pass",
+      "source": "figures/rebuilt/F8_growth_size_associations/plot_figure_f8.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F9_adaptive_CQR_performance/Figure_F9_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/F9_adaptive_CQR_performance/Figure_F9_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F9_adaptive_CQR_performance/Figure_F9_summary.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/F9_adaptive_CQR_performance/Figure_F9_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/F9_adaptive_CQR_performance/plot_figure_f9.py",
+      "status": "pass",
+      "source": "figures/rebuilt/F9_adaptive_CQR_performance/plot_figure_f9.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/S1_growth_associations/Figure_S1_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/S1_growth_associations/Figure_S1_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/S1_growth_associations/plot_figure_s1.py",
+      "status": "pass",
+      "source": "figures/rebuilt/S1_growth_associations/plot_figure_s1.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/S2_biological_scale/Figure_S2_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/S2_biological_scale/Figure_S2_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/S2_biological_scale/plot_figure_s2.py",
+      "status": "pass",
+      "source": "figures/rebuilt/S2_biological_scale/plot_figure_s2.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/S3_replication_sensitivity/Figure_S3_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/S3_replication_sensitivity/Figure_S3_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/S3_replication_sensitivity/plot_figure_s3.py",
+      "status": "pass",
+      "source": "figures/rebuilt/S3_replication_sensitivity/plot_figure_s3.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/S4_growth_incremental_value/Figure_S4_source.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/S4_growth_incremental_value/Figure_S4_source.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/S4_growth_incremental_value/Figure_S4_summary.csv",
+      "status": "pass",
+      "source": "figures/rebuilt/S4_growth_incremental_value/Figure_S4_summary.csv",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/rebuilt/S4_growth_incremental_value/plot_figure_s4.py",
+      "status": "pass",
+      "source": "figures/rebuilt/S4_growth_incremental_value/plot_figure_s4.py",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F2_point_forecasting.pdf",
+      "status": "pass",
+      "source": "figures/final/F2_point_forecasting.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F2_point_forecasting.png",
+      "status": "pass",
+      "source": "figures/final/F2_point_forecasting.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F2_point_forecasting.svg",
+      "status": "pass",
+      "source": "figures/final/F2_point_forecasting.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F3_coverage_efficiency.pdf",
+      "status": "pass",
+      "source": "figures/final/F3_coverage_efficiency.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F3_coverage_efficiency.png",
+      "status": "pass",
+      "source": "figures/final/F3_coverage_efficiency.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F3_coverage_efficiency.svg",
+      "status": "pass",
+      "source": "figures/final/F3_coverage_efficiency.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F4_genotype_reliability.pdf",
+      "status": "pass",
+      "source": "figures/final/F4_genotype_reliability.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F4_genotype_reliability.png",
+      "status": "pass",
+      "source": "figures/final/F4_genotype_reliability.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F4_genotype_reliability.svg",
+      "status": "pass",
+      "source": "figures/final/F4_genotype_reliability.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F5_assignment_reliability.pdf",
+      "status": "pass",
+      "source": "figures/final/F5_assignment_reliability.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F5_assignment_reliability.png",
+      "status": "pass",
+      "source": "figures/final/F5_assignment_reliability.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F5_assignment_reliability.svg",
+      "status": "pass",
+      "source": "figures/final/F5_assignment_reliability.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F6_nonoverlapping_window_sensitivity.pdf",
+      "status": "pass",
+      "source": "figures/final/F6_nonoverlapping_window_sensitivity.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F6_nonoverlapping_window_sensitivity.png",
+      "status": "pass",
+      "source": "figures/final/F6_nonoverlapping_window_sensitivity.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/F6_nonoverlapping_window_sensitivity.svg",
+      "status": "pass",
+      "source": "figures/final/F6_nonoverlapping_window_sensitivity.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/Figure_F7_Directional_Miscoverage.pdf",
+      "status": "pass",
+      "source": "figures/final/Figure_F7_Directional_Miscoverage.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/Figure_F7_Directional_Miscoverage.png",
+      "status": "pass",
+      "source": "figures/final/Figure_F7_Directional_Miscoverage.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/Figure_F7_Directional_Miscoverage.svg",
+      "status": "pass",
+      "source": "figures/final/Figure_F7_Directional_Miscoverage.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/Figure_F8_Growth_Size_Associations.pdf",
+      "status": "pass",
+      "source": "figures/final/Figure_F8_Growth_Size_Associations.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/Figure_F8_Growth_Size_Associations.png",
+      "status": "pass",
+      "source": "figures/final/Figure_F8_Growth_Size_Associations.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/Figure_F8_Growth_Size_Associations.svg",
+      "status": "pass",
+      "source": "figures/final/Figure_F8_Growth_Size_Associations.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/Figure_F9_Adaptive_CQR_Performance.pdf",
+      "status": "pass",
+      "source": "figures/final/Figure_F9_Adaptive_CQR_Performance.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/Figure_F9_Adaptive_CQR_Performance.png",
+      "status": "pass",
+      "source": "figures/final/Figure_F9_Adaptive_CQR_Performance.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/main/Figure_F9_Adaptive_CQR_Performance.svg",
+      "status": "pass",
+      "source": "figures/final/Figure_F9_Adaptive_CQR_Performance.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S3_Replication_Sensitivity.pdf",
+      "status": "pass",
+      "source": "figures/final/Figure_S3_Replication_Sensitivity.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S3_Replication_Sensitivity.png",
+      "status": "pass",
+      "source": "figures/final/Figure_S3_Replication_Sensitivity.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S3_Replication_Sensitivity.svg",
+      "status": "pass",
+      "source": "figures/final/Figure_S3_Replication_Sensitivity.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S4_Growth_Incremental_Value.pdf",
+      "status": "pass",
+      "source": "figures/final/Figure_S4_Growth_Incremental_Value.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S4_Growth_Incremental_Value.png",
+      "status": "pass",
+      "source": "figures/final/Figure_S4_Growth_Incremental_Value.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S4_Growth_Incremental_Value.svg",
+      "status": "pass",
+      "source": "figures/final/Figure_S4_Growth_Incremental_Value.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S1_Exploratory_Growth_Associations.pdf",
+      "status": "pass",
+      "source": "figures/supplementary/Figure_S1_Exploratory_Growth_Associations.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S1_Exploratory_Growth_Associations.png",
+      "status": "pass",
+      "source": "figures/supplementary/Figure_S1_Exploratory_Growth_Associations.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S1_Exploratory_Growth_Associations.svg",
+      "status": "pass",
+      "source": "figures/supplementary/Figure_S1_Exploratory_Growth_Associations.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S2_Interval_Width_and_Leaf_Area.pdf",
+      "status": "pass",
+      "source": "figures/supplementary/Figure_S2_Interval_Width_and_Leaf_Area.pdf",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S2_Interval_Width_and_Leaf_Area.png",
+      "status": "pass",
+      "source": "figures/supplementary/Figure_S2_Interval_Width_and_Leaf_Area.png",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "copy integrity: figures/supplementary/Figure_S2_Interval_Width_and_Leaf_Area.svg",
+      "status": "pass",
+      "source": "figures/supplementary/Figure_S2_Interval_Width_and_Leaf_Area.svg",
+      "evidence_level": "byte-verified source copy"
+    },
+    {
+      "name": "outer LOGO folds",
+      "observed": 21.0,
+      "expected": 21.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "distinct held-out genotypes",
+      "observed": 21.0,
+      "expected": 21.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 1 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 1 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 1 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 1 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 1 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 1 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 2 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 2 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 2 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 2 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 2 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 2 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 3 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 3 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 3 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 3 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 3 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 3 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 4 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 4 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 4 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 4 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 4 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 4 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 5 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 5 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 5 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 5 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 5 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 5 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 6 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 6 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 6 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 6 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 6 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 6 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 7 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 7 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 7 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 7 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 7 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 7 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 8 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 8 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 8 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 8 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 8 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 8 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 9 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 9 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 9 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 9 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 9 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 9 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 10 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 10 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 10 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 10 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 10 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 10 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 11 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 11 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 11 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 11 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 11 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 11 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 12 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 12 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 12 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 12 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 12 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 12 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 13 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 13 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 13 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 13 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 13 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 13 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 14 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 14 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 14 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 14 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 14 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 14 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 15 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 15 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 15 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 15 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 15 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 15 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 16 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 16 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 16 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 16 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 16 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 16 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 17 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 17 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 17 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 17 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 17 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 17 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 18 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 18 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 18 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 18 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 18 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 18 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 19 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 19 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 19 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 19 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 19 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 19 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 20 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 20 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 20 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 20 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 20 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 20 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 21 development count",
+      "observed": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 21 assignments",
+      "observed": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 21 assignment 1 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 21 assignment 2 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 21 assignment 3 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "fold 21 assignment 4 15/5/1 disjointness",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h windows",
+      "observed": 121431.0,
+      "expected": 121431.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "data/manifests/manifest_metadata.json",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h plants",
+      "observed": 318.0,
+      "expected": 318.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h genotypes",
+      "observed": 21.0,
+      "expected": 21.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h windows",
+      "observed": 107214.0,
+      "expected": 107214.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "data/manifests/manifest_metadata.json",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h plants",
+      "observed": 318.0,
+      "expected": 318.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h genotypes",
+      "observed": 21.0,
+      "expected": 21.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "total windows",
+      "observed": 228645.0,
+      "expected": 228645.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "retained leaf-area observations",
+      "observed": 165796.0,
+      "expected": 165796.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "data/manifests/retained_observations_by_plant.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "retained observation summary digest",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "HGB 24h macro MAE rounded",
+      "observed": 309.9215285958959,
+      "expected": 309.92,
+      "tolerance": 0.005,
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_5_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "HGB 24h archived aggregation",
+      "observed": 309.9215285958959,
+      "expected": 309.9215285958959,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "HGB 48h macro MAE rounded",
+      "observed": 518.5121051658176,
+      "expected": 518.51,
+      "tolerance": 0.005,
+      "status": "pass",
+      "source": "experiments/E1/tables/E1_5_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "HGB 48h archived aggregation",
+      "observed": 518.5121051658176,
+      "expected": 518.5121051658176,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 24h genotype count",
+      "observed": 21.0,
+      "expected": 21.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 24h coverage aggregation",
+      "observed": 0.8995902131468146,
+      "expected": 0.8995902131468144,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 24h width aggregation",
+      "observed": 1485.421269359007,
+      "expected": 1485.421269359007,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 24h score aggregation",
+      "observed": 2132.415649991788,
+      "expected": 2132.415649991788,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 24h lower_miss aggregation",
+      "observed": 0.04804871323174997,
+      "expected": 0.04804871323174997,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 24h upper_miss aggregation",
+      "observed": 0.05236107362143545,
+      "expected": 0.05236107362143545,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 24h genotype count",
+      "observed": 21.0,
+      "expected": 21.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 24h coverage aggregation",
+      "observed": 0.8994304633964574,
+      "expected": 0.8994304633964574,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 24h width aggregation",
+      "observed": 1483.7637470991137,
+      "expected": 1483.763747099114,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 24h score aggregation",
+      "observed": 2130.537726613625,
+      "expected": 2130.537726613625,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 24h lower_miss aggregation",
+      "observed": 0.048276112249679315,
+      "expected": 0.048276112249679315,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 24h upper_miss aggregation",
+      "observed": 0.05229342435386329,
+      "expected": 0.05229342435386329,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 24h genotype count",
+      "observed": 21.0,
+      "expected": 21.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 24h coverage aggregation",
+      "observed": 0.8997119769358646,
+      "expected": 0.8997119769358648,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 24h width aggregation",
+      "observed": 1479.0589508963203,
+      "expected": 1479.0589508963203,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 24h score aggregation",
+      "observed": 2139.587082212205,
+      "expected": 2139.587082212205,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 24h lower_miss aggregation",
+      "observed": 0.0466907452580852,
+      "expected": 0.04669074525808519,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 24h upper_miss aggregation",
+      "observed": 0.05359727780605004,
+      "expected": 0.05359727780605004,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 48h genotype count",
+      "observed": 21.0,
+      "expected": 21.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 48h coverage aggregation",
+      "observed": 0.900244659493157,
+      "expected": 0.900244659493157,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 48h width aggregation",
+      "observed": 2393.1407422841417,
+      "expected": 2393.1407422841417,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 48h score aggregation",
+      "observed": 3370.3716880272978,
+      "expected": 3370.3716880272978,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 48h lower_miss aggregation",
+      "observed": 0.04363543202487901,
+      "expected": 0.04363543202487901,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SA_CQR 48h upper_miss aggregation",
+      "observed": 0.05611990848196419,
+      "expected": 0.05611990848196417,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 48h genotype count",
+      "observed": 21.0,
+      "expected": 21.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 48h coverage aggregation",
+      "observed": 0.9003019860430458,
+      "expected": 0.900301986043046,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 48h width aggregation",
+      "observed": 2388.1273427381584,
+      "expected": 2388.1273427381584,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 48h score aggregation",
+      "observed": 3364.9582511102744,
+      "expected": 3364.958251110274,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 48h lower_miss aggregation",
+      "observed": 0.04369752839460586,
+      "expected": 0.043697528394605854,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "SGA_CQR 48h upper_miss aggregation",
+      "observed": 0.05600048556234823,
+      "expected": 0.05600048556234823,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 48h genotype count",
+      "observed": 21.0,
+      "expected": 21.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 48h coverage aggregation",
+      "observed": 0.900400611362259,
+      "expected": 0.900400611362259,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 48h width aggregation",
+      "observed": 2385.689152543103,
+      "expected": 2385.689152543103,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 48h score aggregation",
+      "observed": 3389.0916706739567,
+      "expected": 3389.091670673957,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 48h lower_miss aggregation",
+      "observed": 0.04220399910598127,
+      "expected": 0.04220399910598127,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U5 48h upper_miss aggregation",
+      "observed": 0.05739538953175958,
+      "expected": 0.057395389531759565,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h manuscript coverage percent",
+      "observed": 89.97119769358646,
+      "expected": 89.9712,
+      "tolerance": 5e-06,
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h manuscript width",
+      "observed": 1479.0589508963203,
+      "expected": 1479.059,
+      "tolerance": 0.0005,
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h manuscript score",
+      "observed": 2139.587082212205,
+      "expected": 2139.587,
+      "tolerance": 0.0005,
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h manuscript worst coverage percent",
+      "observed": 82.21703622232337,
+      "expected": 82.217,
+      "tolerance": 0.0005,
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h manuscript SGA-CQR score",
+      "observed": 2130.537726613625,
+      "expected": 2130.538,
+      "tolerance": 0.0005,
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h manuscript coverage percent",
+      "observed": 90.0400611362259,
+      "expected": 90.04006,
+      "tolerance": 5e-06,
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h manuscript width",
+      "observed": 2385.689152543103,
+      "expected": 2385.689,
+      "tolerance": 0.0005,
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h manuscript score",
+      "observed": 3389.0916706739567,
+      "expected": 3389.092,
+      "tolerance": 0.0005,
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h manuscript worst coverage percent",
+      "observed": 76.39306084000144,
+      "expected": 76.393,
+      "tolerance": 0.0005,
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h manuscript SGA-CQR score",
+      "observed": 3364.9582511102744,
+      "expected": 3364.958,
+      "tolerance": 0.0005,
+      "status": "pass",
+      "source": "experiments/P3/P3_6/P3_6_genotype_metrics.csv",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h plant assignment coverage reconstructs U5",
+      "observed": 0.8997119769358646,
+      "expected": 0.899712,
+      "tolerance": 5e-08,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h E3 to P3 U5 coverage",
+      "observed": 0.8997119769358646,
+      "expected": 0.8997119769358646,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h E3 to P3 U5 width",
+      "observed": 1479.0589508963203,
+      "expected": 1479.0589508963203,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "24h E3 to P3 U5 score",
+      "observed": 2139.5870822122047,
+      "expected": 2139.587082212205,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h plant assignment coverage reconstructs U5",
+      "observed": 0.900400611362259,
+      "expected": 0.9004006,
+      "tolerance": 5e-08,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h E3 to P3 U5 coverage",
+      "observed": 0.900400611362259,
+      "expected": 0.900400611362259,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h E3 to P3 U5 width",
+      "observed": 2385.689152543103,
+      "expected": 2385.689152543103,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "48h E3 to P3 U5 score",
+      "observed": 3389.0916706739567,
+      "expected": 3389.0916706739567,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "U0\u2013U8 procedure coverage",
+      "observed": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "paper table U5 24h coverage",
+      "observed": 0.8997119769358648,
+      "expected": 0.899712,
+      "tolerance": 5e-08,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "paper table U5 48h coverage",
+      "observed": 0.900400611362259,
+      "expected": 0.9004006,
+      "tolerance": 5e-08,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    },
+    {
+      "name": "directional coverage decomposition",
+      "observed": 2.220446049250313e-16,
+      "expected": 0.0,
+      "tolerance": 1e-09,
+      "status": "pass",
+      "source": "",
+      "evidence_level": "verified from archived outputs"
+    }
+  ]
+}
