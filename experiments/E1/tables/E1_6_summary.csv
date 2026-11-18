@@ -1,0 +1,3 @@
+horizon_hours,genotypes,unseen_macro_mae,exposed_extra_macro_mae,exposed_matched_macro_mae,extra_exposure_improvement_pct,matched_exposure_improvement_pct,extra_exposure_wins,matched_exposure_wins
+24,21,309.7816009227402,307.2397495555927,308.0151415340883,0.8205301281858479,0.5702273419048319,15,16
+48,21,521.0492209590872,514.8796144638592,516.5940241880724,1.1840736435363743,0.8550433609351434,17,15
