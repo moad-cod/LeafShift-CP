@@ -1,0 +1,3 @@
+horizon_hours,n_windows,n_genotypes,target_area_median_px2,target_area_q10_px2,target_area_q90_px2,window_width_median_px2,window_width_over_target_median,genotype_macro_width_px2,genotype_macro_coverage
+24,121431,21,1719.0,260.0,5847.0,1220.4660368562443,0.6716927995357822,1479.0589508963203,0.8997119769358649
+48,107214,21,1966.0,288.0,6055.0,1999.1810021743115,1.048160012684658,2385.689152543103,0.900400611362259
