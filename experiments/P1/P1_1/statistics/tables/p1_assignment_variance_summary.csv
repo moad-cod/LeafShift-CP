@@ -1,0 +1,3 @@
+horizon_hours,method,between_genotype_sd,within_genotype_assignment_sd_rms,within_to_between_ratio,flag_ratio_ge_half,note
+24,U5_CQR_balanced,0.0330112477569,0.0159755511884,0.48394266421,False,fit_and_calibration_assignments_both_change
+48,U5_CQR_balanced,0.0472743029352,0.0244700504651,0.517618430009,True,fit_and_calibration_assignments_both_change

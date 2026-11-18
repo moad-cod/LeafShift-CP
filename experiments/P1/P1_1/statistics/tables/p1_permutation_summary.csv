@@ -1,0 +1,3 @@
+horizon_hours,observed_s1_sd,observed_s2_below90,observed_s3_min,null_s1_median,null_s1_p95,null_s2_p95,null_s3_p05,s1_descriptive_tail_fraction,interpretation
+24,0.0330112477569,8,0.822170362223,0.0156864297432,0.0208692928765,5,0.855532970026,9.99900009999e-05,heuristic_not_confirmatory_permutation_p_value
+48,0.0472743029352,6,0.7639306084,0.0193999885089,0.0264959068522,6,0.837209162661,9.99900009999e-05,heuristic_not_confirmatory_permutation_p_value
