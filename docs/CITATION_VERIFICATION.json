@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-18",
+  "phenoleaf": {
+    "doi": "10.1007/978-3-032-37359-5_23",
+    "source": "https://link.springer.com/chapter/10.1007/978-3-032-37359-5_23",
+    "status": "Title/authors/year/LNCS17050/pages407-424 verified; original reference preserved"
+  },
+  "alert": {
+    "doi": "10.1016/j.compag.2026.112620",
+    "source": "https://api.crossref.org/works/10.1016/j.compag.2026.112620",
+    "publisher_source": "https://www.sciencedirect.com/science/article/pii/S0168169926012184",
+    "title": "ALeRT: An RGB-based deep learning pipeline and benchmark for automated phenotyping of rosette and leaf traits in Arabidopsis thaliana",
+    "authors": [
+      "Rijad Sarić",
+      "Ivan Kashkan",
+      "Mathew G. Lewsey",
+      "Klára Panzarová",
+      "Martin Trtílek",
+      "Edhem Čustović",
+      "James Whelan"
+    ],
+    "year": 2026,
+    "article_number": "112620",
+    "volume_in_manuscript": "257",
+    "volume_basis": "First-author supplied; DOI registry currently has no volume",
+    "status": "DOI/title/authors/year/article verified; supplied volume not independently verified"
+  },
+  "additional_resource": "https://arabidopsis-rgb.latrobe.edu.au",
+  "additional_resource_experimental_use": "Not established; context link only",
+  "own_paper_publication_details": "No DOI, acceptance or publication invented"
+}
