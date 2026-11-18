@@ -1,0 +1,3 @@
+horizon,comparison,metric,n_genotypes,mean_delta,median_delta,bootstrap_low,bootstrap_high,negative_genotypes,positive_genotypes,ties,loo_min,loo_max,unit
+24,SGA_CQR_minus_SA_CQR,score,21,-1.8779233781627096,-2.24605025567962,-3.1635648564029037,-0.59048385521534,14,7,0,-2.169941106751389,-1.5845923448352892,px²
+48,SGA_CQR_minus_SA_CQR,score,21,-5.413436917022864,-3.9601553759630406,-10.41188540493372,-0.3003298310345381,13,8,0,-6.764228258371122,-4.297014492771927,px²
