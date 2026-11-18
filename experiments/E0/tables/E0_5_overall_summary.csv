@@ -1,0 +1,5 @@
+genotype,horizon_hours,total_plants,eligible_plants,windows,leaf_tracks,distinct_plant_cutoffs
+ALL,24,318,318,121431,4633,14529
+EXCLUDING_FLAGGED_PLANT,24,317,317,120186,4611,14405
+ALL,48,318,318,107214,4304,13558
+EXCLUDING_FLAGGED_PLANT,48,317,317,106056,4282,13438
