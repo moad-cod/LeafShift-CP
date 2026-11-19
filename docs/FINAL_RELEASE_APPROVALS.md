@@ -1,5 +1,26 @@
 # Release authority and permission scope
 
+## Current authorship clarification — 19 November 2026
+
+The first author reports that all three authors have approved the final author
+order, corresponding-author change and research release. The current order is
+**Mouad el Baz** (first and sole corresponding author), **Sahil Khan** (second)
+and **Qasim Khan** (third). Sahil's scientific contributions and legitimate
+software copyright remain unchanged.
+
+Correspondence: Mouad el Baz, Independent Researcher, Morocco;
+[elbaz.ouad1249@gmail.com](mailto:elbaz.ouad1249@gmail.com);
+[ORCID 0009-0005-0640-4166](https://orcid.org/0009-0005-0640-4166).
+
+This entry records the confirmation supplied in the working conversation on
+19 November 2026; it does not invent signatures, individual approval dates or
+supporting correspondence. The references to Sahil as corresponding author in
+the dated record below describe the earlier arrangement and are superseded by
+this clarification. Author order, contributions, licensing and dataset-permission
+scope are preserved.
+
+## Historical approval record — 18 November 2026
+
 Recorded 18 November 2026 from the first author's instructions and explicit
 working-conversation responses, including the explicit instruction to publish
 the exact manuscript Figure 1. Private correspondence is not published or

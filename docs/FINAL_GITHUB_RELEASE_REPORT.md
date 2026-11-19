@@ -1,5 +1,50 @@
 # Public research release and Figure 1 validation
 
+## Current metadata clarification — 19 November 2026
+
+Current author order: **Mouad el Baz**, **Sahil Khan**, **Qasim Khan**. Mouad is
+the first and sole corresponding author, Independent Researcher, Morocco;
+[elbaz.ouad1249@gmail.com](mailto:elbaz.ouad1249@gmail.com),
+[ORCID 0009-0005-0640-4166](https://orcid.org/0009-0005-0640-4166).
+All three authors' approval of this arrangement and the research release is
+author-reported confirmed; no signatures or approval documents are invented.
+
+README contact information and the CFF author-list structure are corrected.
+The CFF retains all three authors, Mouad's supplied ORCID, software version
+`0.1.0` and MIT identifier. No article or Zenodo DOI is invented. The exact
+current file membership and hashes are in `PUBLIC_UPLOAD_FILES.txt` and
+`PUBLIC_UPLOAD_MANIFEST.csv`. Scientific source, configurations, data, figures,
+results and the existing MIT copyright holders remain unchanged.
+
+Validation for this metadata update: **474/474** existing archived-evidence and
+copy-integrity checks and **9/9** existing unit tests pass. All **49** local
+README links resolve to tracked public paths. Unique-key YAML parsing and the
+official CFF 1.2.0 schema pass; Mouad's ORCID format and MOD 11-2 checksum are
+valid. The ORCID is author-supplied; its ownership was not independently
+authenticated. Full end-to-end training was not rerun or newly claimed.
+
+The existing `v0.1.0` tag points to commit
+`e0cd7438be990d95491afc28e48b00dcaad25dcf`, before this metadata correction.
+Updating main does not change that tagged snapshot. No tag or GitHub release is
+created, deleted, moved or edited by this update. A subsequent archive of the
+corrected snapshot will require an explicit release/version decision; retain
+the existing tag and do not force-push it. A future release description should
+identify Mouad as first and sole corresponding author and preserve Sahil and
+Qasim as second and third authors, respectively.
+
+At this check, the GitHub release-by-tag endpoint returned 404 and the accessible
+release list returned no published or draft entries. This records the state
+visible to the connection, not proof about inaccessible private drafts. The
+existing tag remains present. If `v0.1.0` is used for a future release without
+moving that tag, it will still archive the earlier metadata snapshot; a new
+tag/version is the normal way to publish the corrected files.
+
+The dated report below is preserved as historical validation evidence, including
+its earlier corresponding-author arrangement and file-size/test receipts.
+Those historical statements do not override the current clarification above.
+
+## Historical validation snapshot — 18 November 2026
+
 18 November 2026. The research repository is published at
 [moad-cod/LeafShift-CP](https://github.com/moad-cod/LeafShift-CP).
 The authorized Figure 1 and permission-documentation update passed the checks

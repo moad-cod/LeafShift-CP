@@ -278,11 +278,18 @@ separate rights; the software license does not automatically cover them.
 
 ## AUTHORS
 
-**Mouad el Baz** — First author.
+**Mouad el Baz** — First author and sole corresponding author.
 
-**Sahil Khan** — Second author and corresponding author.
+**Sahil Khan** — Second author.
 
 **Qasim Khan** — Third author.
+
+**Corresponding author**
+
+Mouad el Baz<br>
+Independent Researcher, Morocco<br>
+Email: [elbaz.ouad1249@gmail.com](mailto:elbaz.ouad1249@gmail.com)<br>
+ORCID: [0009-0005-0640-4166](https://orcid.org/0009-0005-0640-4166)
 
 Use [CITATION.cff](CITATION.cff) to cite the code with all three scientific
 authors, and identify the version used. The companion manuscript awaits
