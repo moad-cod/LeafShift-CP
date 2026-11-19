@@ -1,6 +1,6 @@
 path,bytes,sha256,permission_scope,note
 .gitignore,18961,48465b090c67f04b82a83e4f076443e2cb5d1e98bde3b00cfd653cabe8b5d463,MIT original software; separately permitted derived material; see approval record,
-CITATION.cff,937,02ae46fcb128dbed01c08f2a7fd9a909cb51bd4174e766c960ff78aeb9cff367,MIT original software; separately permitted derived material; see approval record,
+CITATION.cff,988,48b34dc154304739d2e6b67087e00af38e984199a5e50707332754708ba69ca8,MIT original software; separately permitted derived material; see approval record,
 LICENSE,1081,346fd678466718f05d64d2a22e778909f7b349223297143d6e4049a8704c4663,MIT original software; separately permitted derived material; see approval record,
 README.md,18393,3594cbe75530b934d304bc8092e461b1869cb110e3633249e8939f4dc4f408cb,MIT original software; separately permitted derived material; see approval record,
 configs/E1_1_genotype_folds.json,57067,0a036a4e1ad5faf3fc7df6380d750d4b9e2a1f36eb3c1be3552008fa5a406a23,MIT original software; separately permitted derived material; see approval record,
