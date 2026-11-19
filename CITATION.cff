@@ -3,8 +3,10 @@ message: "Please cite the associated manuscript and identify the version of this
 type: software
 title: "Reliability of Conformal Prediction for Individual-Leaf Area Forecasting Under Held-Out Arabidopsis Genotypes"
 authors:
+  authors:
   - family-names: "el Baz"
     given-names: "Mouad"
+    orcid: "https://orcid.org/0009-0005-0640-4166"
   - family-names: "Khan"
     given-names: "Sahil"
   - family-names: "Khan"
