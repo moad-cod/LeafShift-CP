@@ -11,7 +11,7 @@ authors:
     orcid: "https://orcid.org/0009-0002-2903-0556"
   - family-names: "Khan"
     given-names: "Qasim"
-version: 0.1.0
+version: 0.1.1
 license: MIT
 abstract: "Public research-code repository for interval reliability under held-out genotype exclusion, with authorized research materials and derived evidence. The associated manuscript awaits submission; full end-to-end retraining is not claimed."
 keywords:

@@ -1,6 +1,18 @@
 # Public research release and Figure 1 validation
 
-## Current metadata clarification — 19 November 2026
+## Version 0.1.1 preparation — 19 November 2026
+
+Current main prepares software version `0.1.1`: the CFF and runtime version
+identifiers agree. Author order, both confirmed ORCIDs, corresponding-author
+details, MIT licensing and scientific content are preserved. Current hashes
+are recorded in `PUBLIC_UPLOAD_MANIFEST.csv`.
+
+The existing `v0.1.0` tag and release remain unchanged; that tag retains the
+earlier invalid nested CFF author structure. The author will create `v0.1.1`
+after reviewing the corrected metadata. This preparation creates no tag,
+GitHub release or Zenodo DOI. The earlier records below remain historical.
+
+## Earlier metadata clarification — 19 November 2026
 
 Current author order: **Mouad el Baz**, **Sahil Khan**, **Qasim Khan**. Mouad is
 the first and sole corresponding author, Independent Researcher, Morocco;
