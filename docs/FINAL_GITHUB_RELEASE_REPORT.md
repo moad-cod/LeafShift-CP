@@ -1,5 +1,16 @@
 # Public research release and Figure 1 validation
 
+## Published software archive — 19 November 2026
+
+The published [GitHub release v0.1.1](https://github.com/moad-cod/LeafShift-CP/releases/tag/v0.1.1)
+is archived at [Zenodo DOI 10.5281/zenodo.24370590](https://doi.org/10.5281/zenodo.24370590).
+The Zenodo record and publisher-deposited DataCite metadata were checked: the
+DOI is findable, the version is v0.1.1, and the title, three-author order, both
+ORCIDs and MIT software license agree. This software DOI is separate from any
+future journal article DOI. The archived tag is unchanged; DOI links added to
+main are post-release metadata/documentation updates, not a new release.
+Historical preparation and approval records below remain preserved.
+
 ## Version 0.1.1 preparation — 19 November 2026
 
 Current main prepares software version `0.1.1`: the CFF and runtime version

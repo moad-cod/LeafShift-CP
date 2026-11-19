@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the associated manuscript and identify the version of this research code used. Publication DOI and final bibliographic details are pending."
+message: "Please cite the archived LeafShift-CP software using its Zenodo DOI and identify version 0.1.1. The associated manuscript's publication DOI and final bibliographic details are pending."
 type: software
 title: "Reliability of Conformal Prediction for Individual-Leaf Area Forecasting Under Held-Out Arabidopsis Genotypes"
 authors:
@@ -12,6 +12,7 @@ authors:
   - family-names: "Khan"
     given-names: "Qasim"
 version: 0.1.1
+doi: 10.5281/zenodo.24370590
 license: MIT
 abstract: "Public research-code repository for interval reliability under held-out genotype exclusion, with authorized research materials and derived evidence. The associated manuscript awaits submission; full end-to-end retraining is not claimed."
 keywords:

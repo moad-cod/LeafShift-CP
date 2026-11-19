@@ -3,6 +3,12 @@
 Research software, authorized research materials and selected derived evidence
 are publicly available at https://github.com/moad-cod/LeafShift-CP.
 
+The published [software release v0.1.1](https://github.com/moad-cod/LeafShift-CP/releases/tag/v0.1.1)
+is archived at [Zenodo DOI 10.5281/zenodo.24370590](https://doi.org/10.5281/zenodo.24370590).
+This DOI identifies the research software and its curated evidence, not a journal
+article or an unrestricted raw-dataset release. The source-data requirements and
+limits on complete end-to-end reproduction remain unchanged.
+
 ## Source and citations
 
 Experiments use PhenoLeaf-TS. Cite both provider-requested works:

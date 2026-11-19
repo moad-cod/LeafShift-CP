@@ -296,6 +296,18 @@ authors, and identify the version used. The companion manuscript awaits
 submission; no acceptance, journal publication or publication DOI is claimed
 for the LeafShift-CP paper.
 
+**Archived research software — v0.1.1**
+
+[![Software DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24370590.svg)](https://doi.org/10.5281/zenodo.24370590)
+
+Mouad el Baz, Sahil Khan, and Qasim Khan. *Reliability of Conformal Prediction
+for Individual-Leaf Area Forecasting Under Held-Out Arabidopsis Genotypes*,
+research software, version 0.1.1. Zenodo.
+[DOI: 10.5281/zenodo.24370590](https://doi.org/10.5281/zenodo.24370590).
+The archive corresponds to [GitHub release v0.1.1](https://github.com/moad-cod/LeafShift-CP/releases/tag/v0.1.1).
+This is the software DOI; the journal manuscript has no publication DOI yet.
+Later changes on `main` are post-release updates and do not alter that archive.
+
 ## REFERENCES
 
 1. Sarić, R., Azam, B., Khan, S., and Čustović, E. (2026).

@@ -1,5 +1,11 @@
 # Reproducibility scope
 
+The published [v0.1.1 release](https://github.com/moad-cod/LeafShift-CP/releases/tag/v0.1.1)
+is preserved at [Zenodo DOI 10.5281/zenodo.24370590](https://doi.org/10.5281/zenodo.24370590).
+The archive fixes that release's contents; later documentation changes on `main`
+do not change the archived snapshot. Archiving does not establish a complete
+independent end-to-end training reproduction.
+
 ## Evidence levels
 
 1. **Byte-verified copies:** the public inventory identifies selected original
