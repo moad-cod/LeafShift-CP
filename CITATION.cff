@@ -15,9 +15,9 @@ version: 0.1.0
 license: MIT
 abstract: "Public research-code repository for interval reliability under held-out genotype exclusion, with authorized research materials and derived evidence. The associated manuscript awaits submission; full end-to-end retraining is not claimed."
 keywords:
+  - machine learning
   - conformal prediction
+  - uncertainty quantification
   - plant phenotyping
   - genotype shift
   - Arabidopsis thaliana
-  - uncertainty quantification
-  - Machine learning
